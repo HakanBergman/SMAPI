@@ -8,7 +8,7 @@
         if ($smapi_unique_key == $_POST['key']) {
             print_r($_POST);
             /* Update our db table with the fetched values */
-            #global $wpdb;
+            global $wpdb;
             #$table_name  = $wpdb->prefix."smapi";
             #$month_12 = array('month_12' => $_POST['month_12']);
             #$wpdb->update($table_name, $month_12); 
