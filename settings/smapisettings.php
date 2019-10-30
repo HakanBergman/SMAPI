@@ -1,3 +1,5 @@
+<div id="wpbody" role="main">
+
 <div id="wpbody-content">
 		<div id="screen-meta" class="metabox-prefs">
 
@@ -11,394 +13,663 @@
 								<a href="#tab-panel-overview" aria-controls="tab-panel-overview">
 									Översikt								</a>
 							</li>
-							
-							<li id="tab-link-managing-pages">
-								<a href="#tab-panel-managing-pages" aria-controls="tab-panel-managing-pages">
-									Hantera sidor								</a>
-							</li>
 													</ul>
 					</div>
 
 										<div class="contextual-help-sidebar">
-						<p><strong>För mer information:</strong></p><p><a href="https://codex.wordpress.org/Pages_Screen">Dokumentation för hantering av sidor</a></p><p><a href="https://sv.wordpress.org/support/">Support</a></p>					</div>
+						<p><strong>För mer information:</strong></p><p><a href="https://codex.wordpress.org/Settings_General_Screen">Dokumentation för allmänna inställningar</a></p><p><a href="https://sv.wordpress.org/support/">Support</a></p>					</div>
 					
 					<div class="contextual-help-tabs-wrap">
 						
 							<div id="tab-panel-overview" class="help-tab-content active">
-								<p>Sidor liknar inlägg i att de har en titel, brödtext och tillhörande metadata, men de är olika i att de inte är en del av den kronologiska bloggflödet, ungefär som statiska inlägg. Sidorna är inte kategoriserade eller har taggar, men kan anges i hierarki. Du kan kapsla sidor under andra sidor genom att göra en till "Överordnad" för de andra och på så sätt skapa en grupp av sidor.</p>							</div>
-							
-							<div id="tab-panel-managing-pages" class="help-tab-content">
-								<p>Hantering av sidor är väldigt lik hanteringen av inlägg och sidorna kan anpassas på samma sätt.</p><p>Du kan också utföra samma typer av åtgärder, däribland filtrera i listan med hjälp av filter, agera på en sida med de åtgärdslänkar som visas när du för muspekaren över en rad eller genom att använda massredigeringsmenyn för att redigera metadata för flera sidor på en gång.</p>							</div>
+								<p>Fälten på den här sidan utgör några av de grundläggande inställningarna för din webbplats.</p><p>I de flesta teman visas webbplatsens titel högst upp på varje sida, i webbläsarens titelrad och som identifierande namn för syndikationsflöden. Många teman visar även webbplatsens slogan.</p><p>WordPressadress och webbplatsadress kan vara samma url (exempel.se) eller olika, t.ex om man har WordPress huvudfiler i en undermapp (exempel.se/wordpress) istället för i rotmappen.</p><p>Om du vill att besökarna ska kunna registrera sig, i stället för att registreras av administratören, bocka för rutan medlemskap . En standardroll för nya användare kan anges oavsett om registreringen skett av en administratören eller av besökaren själv.</p><p>Du kan ange språk, språkfilerna laddas då ner och installeras automatiskt (tillgängligt om systemet har skrivrättigheter).</p><p>UTC står för koordinerad universell tid (eller Coordinated Universal Time).</p><p>Du måste klicka på knappen Spara ändringar längst ner på sidan för att de nya inställningarna ska börja gälla.</p>							</div>
 												</div>
 				</div>
 			</div>
-		<div id="screen-options-wrap" class="hidden" tabindex="-1" aria-label="Panelinställningar">
-<form id="adv-settings" method="post">
-		<fieldset class="metabox-prefs">
-		<legend>Kolumner</legend>
-		<label><input class="hide-column-tog" name="author-hide" type="checkbox" id="author-hide" value="author" checked="checked">Författare</label>
-<label><input class="hide-column-tog" name="comments-hide" type="checkbox" id="comments-hide" value="comments" checked="checked">Kommentarer</label>
-<label><input class="hide-column-tog" name="date-hide" type="checkbox" id="date-hide" value="date" checked="checked">Datum</label>
-		</fieldset>
-				<fieldset class="screen-options">
-		<legend>Sidindelning</legend>
-							<label for="edit_page_per_page">Antal poster per sida:</label>
-				<input type="number" step="1" min="1" max="999" class="screen-per-page" name="wp_screen_options[value]" id="edit_page_per_page" maxlength="3" value="20">
-							<input type="hidden" name="wp_screen_options[option]" value="edit_page_per_page">
-		</fieldset>
-		<p class="submit"><input type="submit" name="screen-options-apply" id="screen-options-apply" class="button button-primary" value="Verkställ"></p>
-<input type="hidden" id="screenoptionnonce" name="screenoptionnonce" value="0202433299">
-</form>
-</div>		</div>
+				</div>
 				<div id="screen-meta-links">
-					<div id="screen-options-link-wrap" class="hide-if-no-js screen-meta-toggle">
-			<button type="button" id="show-settings-link" class="button show-settings" aria-controls="screen-options-wrap" aria-expanded="false">Skärmalternativ</button>
-			</div>
-						<div id="contextual-help-link-wrap" class="hide-if-no-js screen-meta-toggle">
+					<div id="contextual-help-link-wrap" class="hide-if-no-js screen-meta-toggle">
 			<button type="button" id="contextual-help-link" class="button show-settings" aria-controls="contextual-help-wrap" aria-expanded="false">Hjälp</button>
 			</div>
 				</div>
-		<div class="wrap">
-<h1 class="wp-heading-inline">
-Sidor</h1>
-
- <a href="https://testwp.datadelenhc.se/wp-admin/post-new.php?post_type=page" class="page-title-action">Skapa ny</a>
-<hr class="wp-header-end">
-
-
-<h2 class="screen-reader-text">Filtrera sidlista</h2><ul class="subsubsub">
-	<li class="all"><a href="edit.php?post_type=page" class="current" aria-current="page">Alla <span class="count">(2)</span></a> |</li>
-	<li class="publish"><a href="edit.php?post_status=publish&amp;post_type=page">Publicerad <span class="count">(1)</span></a> |</li>
-	<li class="draft"><a href="edit.php?post_status=draft&amp;post_type=page">Utkast <span class="count">(1)</span></a></li>
-</ul>
-<form id="posts-filter" method="get">
-
-<p class="search-box">
-	<label class="screen-reader-text" for="post-search-input">Sök sidor:</label>
-	<input type="search" id="post-search-input" name="s" value="">
-		<input type="submit" id="search-submit" class="button" value="Sök sidor"></p>
 		
-<input type="hidden" name="post_status" class="post_status_page" value="all">
-<input type="hidden" name="post_type" class="post_type_page" value="page">
+<div class="wrap">
+<h1>Allmänna inställningar</h1>
+
+<form method="post" action="options.php" novalidate="novalidate">
+<input type="hidden" name="option_page" value="general"><input type="hidden" name="action" value="update"><input type="hidden" id="_wpnonce" name="_wpnonce" value="be9b3279a3"><input type="hidden" name="_wp_http_referer" value="/wp-admin/options-general.php">
+<table class="form-table" role="presentation">
+
+<tbody><tr>
+<th scope="row"><label for="blogname">Webbplatsrubrik</label></th>
+<td><input name="blogname" type="text" id="blogname" value="WordPress - Test och demoversion" class="regular-text"></td>
+</tr>
+
+<tr>
+<th scope="row"><label for="blogdescription">Slogan</label></th>
+<td><input name="blogdescription" type="text" id="blogdescription" aria-describedby="tagline-description" value="En till WordPress-webbplats" class="regular-text">
+<p class="description" id="tagline-description">Berätta med några ord vad den här webbplatsen handlar om.</p></td>
+</tr>
 
 
+<tr>
+<th scope="row"><label for="siteurl">WordPressadress (URL)</label></th>
+<td><input name="siteurl" type="url" id="siteurl" value="https://testwp.datadelenhc.se" class="regular-text code"></td>
+</tr>
 
-<input type="hidden" id="_wpnonce" name="_wpnonce" value="d7c95f515b"><input type="hidden" name="_wp_http_referer" value="/wp-admin/edit.php?post_type=page">	<div class="tablenav top">
+<tr>
+<th scope="row"><label for="home">Webbplatsadress (URL)</label></th>
+<td><input name="home" type="url" id="home" aria-describedby="home-description" value="https://testwp.datadelenhc.se" class="regular-text code">
+	<p class="description" id="home-description">
+		Skriv in adressen här om du vill att <a href="https://codex.wordpress.org/Giving_WordPress_Its_Own_Directory">startsidan för din webbplats ska ligga i en annan katalog än där WordPress är installerat</a>.</p>
+</td>
+</tr>
 
-				<div class="alignleft actions bulkactions">
-			<label for="bulk-action-selector-top" class="screen-reader-text">Välj massåtgärd</label><select name="action" id="bulk-action-selector-top">
-<option value="-1">Massåtgärder</option>
-	<option value="edit" class="hide-if-no-js">Redigera</option>
-	<option value="trash">Lägg i papperskorgen</option>
-</select>
-<input type="submit" id="doaction" class="button action" value="Verkställ">
-		</div>
-					<div class="alignleft actions">
-				<label for="filter-by-date" class="screen-reader-text">Filtrera efter datum</label>
-		<select name="m" id="filter-by-date">
-			<option selected="selected" value="0">Alla datum</option>
-		<option value="201910">oktober 2019</option>
-		</select>
-		<input type="submit" name="filter_action" id="post-query-submit" class="button" value="Filtrera">		</div>
-		<div class="tablenav-pages one-page"><span class="displaying-num">2 objekt</span>
-<span class="pagination-links"><span class="tablenav-pages-navspan button disabled" aria-hidden="true">«</span>
-<span class="tablenav-pages-navspan button disabled" aria-hidden="true">‹</span>
-<span class="paging-input"><label for="current-page-selector" class="screen-reader-text">Nuvarande sida</label><input class="current-page" id="current-page-selector" type="text" name="paged" value="1" size="1" aria-describedby="table-paging"><span class="tablenav-paging-text"> av <span class="total-pages">1</span></span></span>
-<span class="tablenav-pages-navspan button disabled" aria-hidden="true">›</span>
-<span class="tablenav-pages-navspan button disabled" aria-hidden="true">»</span></span></div>
-		<br class="clear">
-	</div>
-		<h2 class="screen-reader-text">Sidlista</h2><table class="wp-list-table widefat fixed striped pages">
-	<thead>
+
+<tr>
+<th scope="row"><label for="new_admin_email">E-postadress</label></th>
+<td><input name="new_admin_email" type="email" id="new_admin_email" aria-describedby="new-admin-email-description" value="hakan.bergman@datadelenhc.se" class="regular-text ltr">
+<p class="description" id="new-admin-email-description">Den här adressen används för administrativa behov. Om du ändrar den så kommer vi att skicka ett meddelande till din nya adress för att bekräfta ändringen. <strong>Den nya adressen kommer att börja gälla först när den bekräftats.</strong></p>
+</td>
+</tr>
+
+
+<tr>
+<th scope="row">Medlemskap</th>
+<td> <fieldset><legend class="screen-reader-text"><span>Medlemskap</span></legend><label for="users_can_register">
+<input name="users_can_register" type="checkbox" id="users_can_register" value="1">
+	Vem som helst kan registrera sig</label>
+</fieldset></td>
+</tr>
+
+<tr>
+<th scope="row"><label for="default_role">Förvald roll för nya användare</label></th>
+<td>
+<select name="default_role" id="default_role">
+	<option selected="selected" value="subscriber">Prenumerant</option>
+	<option value="contributor">Bidragsgivare</option>
+	<option value="author">Författare</option>
+	<option value="editor">Redaktör</option>
+	<option value="administrator">Administratör</option></select>
+</td>
+</tr>
+
+		<tr>
+		<th scope="row"><label for="WPLANG">Webbplatsspråk</label></th>
+		<td>
+			<select name="WPLANG" id="WPLANG"><option value="" lang="en" data-installed="1">English (United States)</option>
+<option value="sv_SE" lang="" selected="selected" data-installed="1">sv_SE</option></select>		</td>
+	</tr>
 	<tr>
-		<td id="cb" class="manage-column column-cb check-column"><label class="screen-reader-text" for="cb-select-all-1">Välj alla</label><input id="cb-select-all-1" type="checkbox"></td><th scope="col" id="title" class="manage-column column-title column-primary sortable desc"><a href="https://testwp.datadelenhc.se/wp-admin/edit.php?post_type=page&amp;orderby=title&amp;order=asc"><span>Rubrik</span><span class="sorting-indicator"></span></a></th><th scope="col" id="author" class="manage-column column-author">Författare</th><th scope="col" id="comments" class="manage-column column-comments num sortable desc"><a href="https://testwp.datadelenhc.se/wp-admin/edit.php?post_type=page&amp;orderby=comment_count&amp;order=asc"><span><span class="vers comment-grey-bubble" title="Kommentarer"><span class="screen-reader-text">Kommentarer</span></span></span><span class="sorting-indicator"></span></a></th><th scope="col" id="date" class="manage-column column-date sortable asc"><a href="https://testwp.datadelenhc.se/wp-admin/edit.php?post_type=page&amp;orderby=date&amp;order=desc"><span>Datum</span><span class="sorting-indicator"></span></a></th>	</tr>
-	</thead>
+<th scope="row"><label for="timezone_string">Tidszon</label></th>
+<td>
 
-	<tbody id="the-list">
-					<tr id="post-2" class="iedit author-self level-0 post-2 type-page status-publish hentry entry">
-			<th scope="row" class="check-column">			<label class="screen-reader-text" for="cb-select-2">
-																				Välj Exempelsida			</label>
-			<input id="cb-select-2" type="checkbox" name="post[]" value="2">
-			<div class="locked-indicator">
-				<span class="locked-indicator-icon" aria-hidden="true"></span>
-				<span class="screen-reader-text">
-				”Exempelsida” är låst				</span>
-			</div>
-			</th><td class="title column-title has-row-actions column-primary page-title" data-colname="Rubrik"><div class="locked-info"><span class="locked-avatar"></span> <span class="locked-text"></span></div>
-<strong><a class="row-title" href="https://testwp.datadelenhc.se/wp-admin/post.php?post=2&amp;action=edit" aria-label="”Exempelsida” (Redigera)">Exempelsida</a></strong>
+<select id="timezone_string" name="timezone_string" aria-describedby="timezone-description">
+	<optgroup label="Afrika">
+<option value="Africa/Abidjan">Abidjan</option>
+<option value="Africa/Accra">Accra</option>
+<option value="Africa/Addis_Ababa">Addis Ababa</option>
+<option value="Africa/El_Aaiun">Al-Ayun</option>
+<option value="Africa/Algiers">Alger</option>
+<option value="Africa/Asmara">Asmara</option>
+<option value="Africa/Bamako">Bamako</option>
+<option value="Africa/Bangui">Bangui</option>
+<option value="Africa/Banjul">Banjul</option>
+<option value="Africa/Bissau">Bissau</option>
+<option value="Africa/Blantyre">Blantyre</option>
+<option value="Africa/Brazzaville">Brazzaville</option>
+<option value="Africa/Bujumbura">Bujumbura</option>
+<option value="Africa/Casablanca">Casablanca</option>
+<option value="Africa/Ceuta">Ceuta</option>
+<option value="Africa/Dakar">Dakar</option>
+<option value="Africa/Dar_es_Salaam">Dar es-Salaam</option>
+<option value="Africa/Djibouti">Djibouti</option>
+<option value="Africa/Douala">Douala</option>
+<option value="Africa/Freetown">Freetown</option>
+<option value="Africa/Gaborone">Gaborone</option>
+<option value="Africa/Harare">Harare</option>
+<option value="Africa/Johannesburg">Johannesburg</option>
+<option value="Africa/Juba">Juba</option>
+<option value="Africa/Cairo">Kairo</option>
+<option value="Africa/Kampala">Kampala</option>
+<option value="Africa/Khartoum">Khartoum</option>
+<option value="Africa/Kigali">Kigali</option>
+<option value="Africa/Kinshasa">Kinshasa</option>
+<option value="Africa/Conakry">Konakry</option>
+<option value="Africa/Lagos">Lagos</option>
+<option value="Africa/Libreville">Libreville</option>
+<option value="Africa/Lome">Lomé</option>
+<option value="Africa/Luanda">Luanda</option>
+<option value="Africa/Lubumbashi">Lubumbashi</option>
+<option value="Africa/Lusaka">Lusaka</option>
+<option value="Africa/Malabo">Malabo</option>
+<option value="Africa/Maputo">Maputo</option>
+<option value="Africa/Maseru">Maseru</option>
+<option value="Africa/Mbabane">Mbabane</option>
+<option value="Africa/Mogadishu">Mogadishu</option>
+<option value="Africa/Monrovia">Monrovia</option>
+<option value="Africa/Ndjamena">N'Djamena</option>
+<option value="Africa/Nairobi">Nairobi</option>
+<option value="Africa/Niamey">Niamey</option>
+<option value="Africa/Nouakchott">Nouakchott</option>
+<option value="Africa/Ouagadougou">Ouagadougou</option>
+<option value="Africa/Porto-Novo">Porto-Novo</option>
+<option value="Africa/Sao_Tome">São Tomé</option>
+<option value="Africa/Tripoli">Tripoli</option>
+<option value="Africa/Tunis">Tunis</option>
+<option value="Africa/Windhoek">Windhoek</option>
+</optgroup>
+<optgroup label="Amerika">
+<option value="America/Adak">Adak</option>
+<option value="America/Anchorage">Anchorage</option>
+<option value="America/Anguilla">Anguilla</option>
+<option value="America/Antigua">Antigua</option>
+<option value="America/Araguaina">Araguaína</option>
+<option value="America/Argentina/Buenos_Aires">Argentina - Buenos Aires</option>
+<option value="America/Argentina/Catamarca">Argentina - Cajamarca</option>
+<option value="America/Argentina/Cordoba">Argentina - Córdoba</option>
+<option value="America/Argentina/Jujuy">Argentina - Jujuy</option>
+<option value="America/Argentina/La_Rioja">Argentina - La Rioja</option>
+<option value="America/Argentina/Mendoza">Argentina - Mendoza</option>
+<option value="America/Argentina/Rio_Gallegos">Argentina - Río Gallegos</option>
+<option value="America/Argentina/Salta">Argentina - Salta</option>
+<option value="America/Argentina/San_Juan">Argentina - San Juan</option>
+<option value="America/Argentina/San_Luis">Argentina - San Luis</option>
+<option value="America/Argentina/Tucuman">Argentina - Tucumán</option>
+<option value="America/Argentina/Ushuaia">Argentina - Ushuaia</option>
+<option value="America/Aruba">Aruba</option>
+<option value="America/Asuncion">Asunción</option>
+<option value="America/Atikokan">Atikokan</option>
+<option value="America/Bahia">Bahia</option>
+<option value="America/Bahia_Banderas">Bahia Banderas</option>
+<option value="America/Barbados">Barbados</option>
+<option value="America/Belize">Belize</option>
+<option value="America/Belem">Belém</option>
+<option value="America/Blanc-Sablon">Blanc-Sablon</option>
+<option value="America/Boa_Vista">Boa Vista</option>
+<option value="America/Bogota">Bogotá</option>
+<option value="America/Boise">Boise</option>
+<option value="America/Cambridge_Bay">Cambridge Bay</option>
+<option value="America/Campo_Grande">Campo Grande</option>
+<option value="America/Cancun">Cancún</option>
+<option value="America/Caracas">Caracas</option>
+<option value="America/Cayenne">Cayenne</option>
+<option value="America/Cayman">Cayman</option>
+<option value="America/Chicago">Chicago</option>
+<option value="America/Chihuahua">Chihuahua</option>
+<option value="America/Costa_Rica">Costa Rica</option>
+<option value="America/Creston">Creston</option>
+<option value="America/Cuiaba">Cuiabá</option>
+<option value="America/Curacao">Curaçao</option>
+<option value="America/Danmarkshavn">Danmarkshavn</option>
+<option value="America/Dawson">Dawson</option>
+<option value="America/Dawson_Creek">Dawson Creek</option>
+<option value="America/Denver">Denver</option>
+<option value="America/Detroit">Detroit</option>
+<option value="America/Dominica">Dominica</option>
+<option value="America/Edmonton">Edmonton</option>
+<option value="America/Eirunepe">Eirunepe</option>
+<option value="America/El_Salvador">El Salvador</option>
+<option value="America/Fortaleza">Fortaleza</option>
+<option value="America/Fort_Nelson">Fort Nelson</option>
+<option value="America/Glace_Bay">Glace Bay</option>
+<option value="America/Goose_Bay">Goose Bay</option>
+<option value="America/Grand_Turk">Grand Turk</option>
+<option value="America/Grenada">Grenada</option>
+<option value="America/Guadeloupe">Guadeloupe</option>
+<option value="America/Guatemala">Guatemala</option>
+<option value="America/Guayaquil">Guayaquil</option>
+<option value="America/Guyana">Guyana</option>
+<option value="America/Halifax">Halifax</option>
+<option value="America/Havana">Havanna</option>
+<option value="America/Hermosillo">Hermosillo</option>
+<option value="America/Indiana/Indianapolis">Indiana - Indianapolis</option>
+<option value="America/Indiana/Knox">Indiana - Knox</option>
+<option value="America/Indiana/Marengo">Indiana - Marengo</option>
+<option value="America/Indiana/Petersburg">Indiana - Petersburg</option>
+<option value="America/Indiana/Tell_City">Indiana - Tell City</option>
+<option value="America/Indiana/Vevay">Indiana - Vevay</option>
+<option value="America/Indiana/Vincennes">Indiana - Vincennes</option>
+<option value="America/Indiana/Winamac">Indiana - Winamac</option>
+<option value="America/Inuvik">Inuvik</option>
+<option value="America/Iqaluit">Iqaluit</option>
+<option value="America/Scoresbysund">Ittoqqortoormiit</option>
+<option value="America/Jamaica">Jamaica</option>
+<option value="America/Juneau">Juneau</option>
+<option value="America/Kentucky/Louisville">Kentucky - Louisville</option>
+<option value="America/Kentucky/Monticello">Kentucky - Monticello</option>
+<option value="America/Kralendijk">Kralendijk</option>
+<option value="America/La_Paz">La Paz</option>
+<option value="America/Lima">Lima</option>
+<option value="America/Los_Angeles">Los Angeles</option>
+<option value="America/Lower_Princes">Lower Princes</option>
+<option value="America/Maceio">Maceió</option>
+<option value="America/Managua">Managua</option>
+<option value="America/Manaus">Manaus</option>
+<option value="America/Marigot">Marigot</option>
+<option value="America/Martinique">Martinique</option>
+<option value="America/Matamoros">Matamoros</option>
+<option value="America/Mazatlan">Mazatlán</option>
+<option value="America/Menominee">Menominee</option>
+<option value="America/Metlakatla">Metlakatla</option>
+<option value="America/Mexico_City">Mexico City</option>
+<option value="America/Miquelon">Miquelon</option>
+<option value="America/Moncton">Moncton</option>
+<option value="America/Monterrey">Monterrey</option>
+<option value="America/Montevideo">Montevideo</option>
+<option value="America/Montserrat">Montserrat</option>
+<option value="America/Merida">Mérida</option>
+<option value="America/Nassau">Nassau</option>
+<option value="America/New_York">New York</option>
+<option value="America/Nipigon">Nipigon</option>
+<option value="America/Nome">Nome</option>
+<option value="America/Noronha">Noronha</option>
+<option value="America/North_Dakota/Beulah">North Dakota - Beulah</option>
+<option value="America/North_Dakota/Center">North Dakota - Center</option>
+<option value="America/North_Dakota/New_Salem">North Dakota - New Salem</option>
+<option value="America/Godthab">Nuuk</option>
+<option value="America/Ojinaga">Ojinaga</option>
+<option value="America/Panama">Panama</option>
+<option value="America/Pangnirtung">Pangnirtung</option>
+<option value="America/Paramaribo">Paramaribo</option>
+<option value="America/Phoenix">Phoenix</option>
+<option value="America/Port-au-Prince">Port-au-Prince</option>
+<option value="America/Port_of_Spain">Port of Spain</option>
+<option value="America/Porto_Velho">Porto Velho</option>
+<option value="America/Puerto_Rico">Puerto Rico</option>
+<option value="America/Punta_Arenas">Punta Arenas</option>
+<option value="America/Thule">Qaanaaq</option>
+<option value="America/Rainy_River">Rainy River</option>
+<option value="America/Rankin_Inlet">Rankin Inlet</option>
+<option value="America/Recife">Recife</option>
+<option value="America/Regina">Regina</option>
+<option value="America/Resolute">Resolute</option>
+<option value="America/Rio_Branco">Rio Branco</option>
+<option value="America/St_Barthelemy">Saint-Barthélemy</option>
+<option value="America/St_Johns">Saint Johns</option>
+<option value="America/St_Kitts">Saint Kitts</option>
+<option value="America/St_Lucia">Saint Lucia</option>
+<option value="America/St_Thomas">Saint Thomas</option>
+<option value="America/St_Vincent">Saint Vincent</option>
+<option value="America/Santarem">Santarém</option>
+<option value="America/Santiago">Santiago</option>
+<option value="America/Santo_Domingo">Santo Domingo</option>
+<option value="America/Sitka">Sitka</option>
+<option value="America/Swift_Current">Swift Current</option>
+<option value="America/Sao_Paulo">São Paulo</option>
+<option value="America/Tegucigalpa">Tegucigalpa</option>
+<option value="America/Thunder_Bay">Thunder Bay</option>
+<option value="America/Tijuana">Tijuana</option>
+<option value="America/Toronto">Toronto</option>
+<option value="America/Tortola">Tortola</option>
+<option value="America/Vancouver">Vancouver</option>
+<option value="America/Whitehorse">Whitehorse</option>
+<option value="America/Winnipeg">Winnipeg</option>
+<option value="America/Yakutat">Yakutat</option>
+<option value="America/Yellowknife">Yellowknife</option>
+</optgroup>
+<optgroup label="Antarktis">
+<option value="Antarctica/Casey">Casey</option>
+<option value="Antarctica/Davis">Davis</option>
+<option value="Antarctica/DumontDUrville">Dumont d'Urville</option>
+<option value="Antarctica/Macquarie">Macquarie</option>
+<option value="Antarctica/Mawson">Mawson</option>
+<option value="Antarctica/McMurdo">McMurdo</option>
+<option value="Antarctica/Palmer">Palmer</option>
+<option value="Antarctica/Rothera">Rothera</option>
+<option value="Antarctica/Syowa">Syowa</option>
+<option value="Antarctica/Troll">Troll</option>
+<option value="Antarctica/Vostok">Vostok</option>
+</optgroup>
+<optgroup label="Arktis">
+<option value="Arctic/Longyearbyen">Longyearbyen</option>
+</optgroup>
+<optgroup label="Asien">
+<option value="Asia/Aden">Aden</option>
+<option value="Asia/Almaty">Almaty</option>
+<option value="Asia/Amman">Amman</option>
+<option value="Asia/Anadyr">Anadyr</option>
+<option value="Asia/Aqtau">Aqtau</option>
+<option value="Asia/Aqtobe">Aqtöbe</option>
+<option value="Asia/Ashgabat">Asjchabad</option>
+<option value="Asia/Atyrau">Atyrau</option>
+<option value="Asia/Baghdad">Bagdad</option>
+<option value="Asia/Bahrain">Bahrain</option>
+<option value="Asia/Baku">Baku</option>
+<option value="Asia/Bangkok">Bangkok</option>
+<option value="Asia/Barnaul">Barnaul</option>
+<option value="Asia/Beirut">Beirut</option>
+<option value="Asia/Bishkek">Bisjkek</option>
+<option value="Asia/Brunei">Brunei</option>
+<option value="Asia/Kolkata">Calcutta</option>
+<option value="Asia/Chita">Chita</option>
+<option value="Asia/Hovd">Chovd</option>
+<option value="Asia/Colombo">Colombo</option>
+<option value="Asia/Damascus">Damaskus</option>
+<option value="Asia/Dhaka">Dhaka</option>
+<option value="Asia/Dili">Dili</option>
+<option value="Asia/Dubai">Dubai</option>
+<option value="Asia/Dushanbe">Dusjanbe</option>
+<option value="Asia/Famagusta">Famagusta</option>
+<option value="Asia/Gaza">Gaza</option>
+<option value="Asia/Hebron">Hebron</option>
+<option value="Asia/Ho_Chi_Minh">Ho Chi Minh</option>
+<option value="Asia/Hong_Kong">Hong Kong</option>
+<option value="Asia/Irkutsk">Irkutsk</option>
+<option value="Asia/Jakarta">Jakarta</option>
+<option value="Asia/Yakutsk">Jakutsk</option>
+<option value="Asia/Jayapura">Jayapura</option>
+<option value="Asia/Yekaterinburg">Jekaterinburg</option>
+<option value="Asia/Yerevan">Jerevan</option>
+<option value="Asia/Jerusalem">Jerusalem</option>
+<option value="Asia/Kabul">Kabul</option>
+<option value="Asia/Kamchatka">Kamtjatka</option>
+<option value="Asia/Karachi">Karachi</option>
+<option value="Asia/Kathmandu">Katmandu</option>
+<option value="Asia/Khandyga">Khandyga</option>
+<option value="Asia/Krasnoyarsk">Krasnojarsk</option>
+<option value="Asia/Kuala_Lumpur">Kuala Lumpur</option>
+<option value="Asia/Kuching">Kuching</option>
+<option value="Asia/Kuwait">Kuwait</option>
+<option value="Asia/Macau">Macau</option>
+<option value="Asia/Magadan">Magadan</option>
+<option value="Asia/Makassar">Makassar</option>
+<option value="Asia/Manila">Manila</option>
+<option value="Asia/Muscat">Muscat</option>
+<option value="Asia/Nicosia">Nicosia</option>
+<option value="Asia/Novokuznetsk">Novokuznetsk</option>
+<option value="Asia/Novosibirsk">Novosibirsk</option>
+<option value="Asia/Omsk">Omsk</option>
+<option value="Asia/Oral">Oral</option>
+<option value="Asia/Phnom_Penh">Phnom Penh</option>
+<option value="Asia/Pontianak">Pontianak</option>
+<option value="Asia/Pyongyang">Pyongyang</option>
+<option value="Asia/Qatar">Qatar</option>
+<option value="Asia/Qostanay">Qostanay</option>
+<option value="Asia/Qyzylorda">Qyzylorda</option>
+<option value="Asia/Riyadh">Riyadh</option>
+<option value="Asia/Sakhalin">Sachalin</option>
+<option value="Asia/Samarkand">Samarkand</option>
+<option value="Asia/Seoul">Seoul</option>
+<option value="Asia/Shanghai">Shanghai</option>
+<option value="Asia/Singapore">Singapore</option>
+<option value="Asia/Srednekolymsk">Srednekolymsk</option>
+<option value="Asia/Taipei">Taipei</option>
+<option value="Asia/Tashkent">Tasjkent</option>
+<option value="Asia/Tbilisi">Tbilisi</option>
+<option value="Asia/Tehran">Teheran</option>
+<option value="Asia/Thimphu">Thimphu</option>
+<option value="Asia/Choibalsan">Tjojbalsan</option>
+<option value="Asia/Tokyo">Tokyo</option>
+<option value="Asia/Tomsk">Tomsk</option>
+<option value="Asia/Ulaanbaatar">Ulaanbaatar</option>
+<option value="Asia/Ust-Nera">Ust-Nera</option>
+<option value="Asia/Vientiane">Vientiane</option>
+<option value="Asia/Vladivostok">Vladivostok</option>
+<option value="Asia/Yangon">Yangon</option>
+<option value="Asia/Urumqi">Ürümqi</option>
+</optgroup>
+<optgroup label="Atlanten">
+<option value="Atlantic/Azores">Azorerna</option>
+<option value="Atlantic/Bermuda">Bermuda</option>
+<option value="Atlantic/Canary">Canary</option>
+<option value="Atlantic/Faroe">Färöarna</option>
+<option value="Atlantic/Cape_Verde">Kap Verde</option>
+<option value="Atlantic/Madeira">Madeira</option>
+<option value="Atlantic/Reykjavik">Reykjavik</option>
+<option value="Atlantic/St_Helena">Sankta Helena</option>
+<option value="Atlantic/Stanley">Stanley</option>
+<option value="Atlantic/South_Georgia">Sydgeorgien</option>
+</optgroup>
+<optgroup label="Australien">
+<option value="Australia/Adelaide">Adelaide</option>
+<option value="Australia/Brisbane">Brisbane</option>
+<option value="Australia/Broken_Hill">Broken Hill</option>
+<option value="Australia/Currie">Currie</option>
+<option value="Australia/Darwin">Darwin</option>
+<option value="Australia/Eucla">Eucla</option>
+<option value="Australia/Hobart">Hobart</option>
+<option value="Australia/Lindeman">Lindeman</option>
+<option value="Australia/Lord_Howe">Lord Howe</option>
+<option value="Australia/Melbourne">Melbourne</option>
+<option value="Australia/Perth">Perth</option>
+<option value="Australia/Sydney">Sydney</option>
+</optgroup>
+<optgroup label="Europa">
+<option value="Europe/Amsterdam">Amsterdam</option>
+<option value="Europe/Andorra">Andorra</option>
+<option value="Europe/Astrakhan">Astrachan</option>
+<option value="Europe/Athens">Aten</option>
+<option value="Europe/Belgrade">Belgrad</option>
+<option value="Europe/Berlin">Berlin</option>
+<option value="Europe/Bratislava">Bratislava</option>
+<option value="Europe/Brussels">Bryssel</option>
+<option value="Europe/Budapest">Budapest</option>
+<option value="Europe/Bucharest">Bukarest</option>
+<option value="Europe/Busingen">Busingen</option>
+<option value="Europe/Chisinau">Chişinău</option>
+<option value="Europe/Dublin">Dublin</option>
+<option value="Europe/Gibraltar">Gibraltar</option>
+<option value="Europe/Guernsey">Guernsey</option>
+<option value="Europe/Helsinki">Helsingfors</option>
+<option value="Europe/Isle_of_Man">Isle of Man</option>
+<option value="Europe/Istanbul">Istanbul</option>
+<option value="Europe/Jersey">Jersey</option>
+<option value="Europe/Kaliningrad">Kaliningrad</option>
+<option value="Europe/Kiev">Kiev</option>
+<option value="Europe/Kirov">Kirov</option>
+<option value="Europe/Copenhagen">Köpenhamn</option>
+<option value="Europe/Lisbon">Lissabon</option>
+<option value="Europe/Ljubljana">Ljubljana</option>
+<option value="Europe/London">London</option>
+<option value="Europe/Luxembourg">Luxemburg</option>
+<option value="Europe/Madrid">Madrid</option>
+<option value="Europe/Malta">Malta</option>
+<option value="Europe/Mariehamn">Mariehamn</option>
+<option value="Europe/Minsk">Minsk</option>
+<option value="Europe/Monaco">Monaco</option>
+<option value="Europe/Moscow">Moskva</option>
+<option value="Europe/Oslo">Oslo</option>
+<option value="Europe/Paris">Paris</option>
+<option value="Europe/Podgorica">Podgorica</option>
+<option value="Europe/Prague">Prag</option>
+<option value="Europe/Riga">Riga</option>
+<option value="Europe/Rome">Rom</option>
+<option value="Europe/Samara">Samara</option>
+<option value="Europe/San_Marino">San Marino</option>
+<option value="Europe/Sarajevo">Sarajevo</option>
+<option value="Europe/Saratov">Saratov</option>
+<option value="Europe/Simferopol">Simferopol</option>
+<option value="Europe/Skopje">Skopje</option>
+<option value="Europe/Sofia">Sofia</option>
+<option selected="selected" value="Europe/Stockholm">Stockholm</option>
+<option value="Europe/Tallinn">Tallinn</option>
+<option value="Europe/Tirane">Tirana</option>
+<option value="Europe/Ulyanovsk">Ulyanovsk</option>
+<option value="Europe/Uzhgorod">Uzjhorod</option>
+<option value="Europe/Vaduz">Vaduz</option>
+<option value="Europe/Vatican">Vatikanstaten</option>
+<option value="Europe/Vilnius">Vilnius</option>
+<option value="Europe/Volgograd">Volgograd</option>
+<option value="Europe/Warsaw">Warszawa</option>
+<option value="Europe/Vienna">Wien</option>
+<option value="Europe/Zagreb">Zagreb</option>
+<option value="Europe/Zaporozhye">Zaporizjzja</option>
+<option value="Europe/Zurich">Zürich</option>
+</optgroup>
+<optgroup label="Indiska oceanen">
+<option value="Indian/Antananarivo">Antananarivo</option>
+<option value="Indian/Chagos">Chagosöarna</option>
+<option value="Indian/Kerguelen">Kerguelen</option>
+<option value="Indian/Christmas">Kiritimati</option>
+<option value="Indian/Cocos">Kokosöarna</option>
+<option value="Indian/Comoro">Komorerna</option>
+<option value="Indian/Mahe">Mahé</option>
+<option value="Indian/Maldives">Maldiverna</option>
+<option value="Indian/Mauritius">Mauritius</option>
+<option value="Indian/Mayotte">Mayotte</option>
+<option value="Indian/Reunion">Réunion</option>
+</optgroup>
+<optgroup label="Stilla havet">
+<option value="Pacific/Apia">Apia</option>
+<option value="Pacific/Auckland">Auckland</option>
+<option value="Pacific/Bougainville">Bougainville</option>
+<option value="Pacific/Chatham">Chatham</option>
+<option value="Pacific/Chuuk">Chuuk</option>
+<option value="Pacific/Efate">Efate</option>
+<option value="Pacific/Enderbury">Enderburyatollen</option>
+<option value="Pacific/Fakaofo">Fakaofo</option>
+<option value="Pacific/Fiji">Fiji</option>
+<option value="Pacific/Funafuti">Funafuti</option>
+<option value="Pacific/Galapagos">Galapagosöarna</option>
+<option value="Pacific/Gambier">Gambieröarna</option>
+<option value="Pacific/Guadalcanal">Guadalcanal</option>
+<option value="Pacific/Guam">Guam</option>
+<option value="Pacific/Honolulu">Honolulu</option>
+<option value="Pacific/Kiritimati">Kiritimati</option>
+<option value="Pacific/Kosrae">Kosraeöarna</option>
+<option value="Pacific/Kwajalein">Kwajalein</option>
+<option value="Pacific/Majuro">Majuro</option>
+<option value="Pacific/Marquesas">Marquesasöarna</option>
+<option value="Pacific/Midway">Midwayöarna</option>
+<option value="Pacific/Nauru">Nauru</option>
+<option value="Pacific/Niue">Niue</option>
+<option value="Pacific/Norfolk">Norfolk</option>
+<option value="Pacific/Noumea">Nouméa</option>
+<option value="Pacific/Pago_Pago">Pago Pago</option>
+<option value="Pacific/Palau">Palau</option>
+<option value="Pacific/Pitcairn">Pitcairnöarna</option>
+<option value="Pacific/Pohnpei">Pohnpei</option>
+<option value="Pacific/Port_Moresby">Port Moresby</option>
+<option value="Pacific/Easter">Påsköarna</option>
+<option value="Pacific/Rarotonga">Rarotonga</option>
+<option value="Pacific/Saipan">Saipan</option>
+<option value="Pacific/Tahiti">Tahiti</option>
+<option value="Pacific/Tarawa">Tarawa</option>
+<option value="Pacific/Tongatapu">Tongatapu</option>
+<option value="Pacific/Wake">Wakeöarna</option>
+<option value="Pacific/Wallis">Wallisön</option>
+</optgroup>
+<optgroup label="UTC">
+<option value="UTC">UTC</option>
+</optgroup>
+<optgroup label="Manuella förskjutningar">
+<option value="UTC-12">UTC-12</option>
+<option value="UTC-11.5">UTC-11:30</option>
+<option value="UTC-11">UTC-11</option>
+<option value="UTC-10.5">UTC-10:30</option>
+<option value="UTC-10">UTC-10</option>
+<option value="UTC-9.5">UTC-9:30</option>
+<option value="UTC-9">UTC-9</option>
+<option value="UTC-8.5">UTC-8:30</option>
+<option value="UTC-8">UTC-8</option>
+<option value="UTC-7.5">UTC-7:30</option>
+<option value="UTC-7">UTC-7</option>
+<option value="UTC-6.5">UTC-6:30</option>
+<option value="UTC-6">UTC-6</option>
+<option value="UTC-5.5">UTC-5:30</option>
+<option value="UTC-5">UTC-5</option>
+<option value="UTC-4.5">UTC-4:30</option>
+<option value="UTC-4">UTC-4</option>
+<option value="UTC-3.5">UTC-3:30</option>
+<option value="UTC-3">UTC-3</option>
+<option value="UTC-2.5">UTC-2:30</option>
+<option value="UTC-2">UTC-2</option>
+<option value="UTC-1.5">UTC-1:30</option>
+<option value="UTC-1">UTC-1</option>
+<option value="UTC-0.5">UTC-0:30</option>
+<option value="UTC+0">UTC+0</option>
+<option value="UTC+0.5">UTC+0:30</option>
+<option value="UTC+1">UTC+1</option>
+<option value="UTC+1.5">UTC+1:30</option>
+<option value="UTC+2">UTC+2</option>
+<option value="UTC+2.5">UTC+2:30</option>
+<option value="UTC+3">UTC+3</option>
+<option value="UTC+3.5">UTC+3:30</option>
+<option value="UTC+4">UTC+4</option>
+<option value="UTC+4.5">UTC+4:30</option>
+<option value="UTC+5">UTC+5</option>
+<option value="UTC+5.5">UTC+5:30</option>
+<option value="UTC+5.75">UTC+5:45</option>
+<option value="UTC+6">UTC+6</option>
+<option value="UTC+6.5">UTC+6:30</option>
+<option value="UTC+7">UTC+7</option>
+<option value="UTC+7.5">UTC+7:30</option>
+<option value="UTC+8">UTC+8</option>
+<option value="UTC+8.5">UTC+8:30</option>
+<option value="UTC+8.75">UTC+8:45</option>
+<option value="UTC+9">UTC+9</option>
+<option value="UTC+9.5">UTC+9:30</option>
+<option value="UTC+10">UTC+10</option>
+<option value="UTC+10.5">UTC+10:30</option>
+<option value="UTC+11">UTC+11</option>
+<option value="UTC+11.5">UTC+11:30</option>
+<option value="UTC+12">UTC+12</option>
+<option value="UTC+12.75">UTC+12:45</option>
+<option value="UTC+13">UTC+13</option>
+<option value="UTC+13.75">UTC+13:45</option>
+<option value="UTC+14">UTC+14</option>
+</optgroup></select>
 
-<div class="hidden" id="inline_2">
-	<div class="post_title">Exempelsida</div><div class="post_name">exempelsida</div>
-	<div class="post_author">1</div>
-	<div class="comment_status">closed</div>
-	<div class="ping_status">open</div>
-	<div class="_status">publish</div>
-	<div class="jj">07</div>
-	<div class="mm">10</div>
-	<div class="aa">2019</div>
-	<div class="hh">15</div>
-	<div class="mn">34</div>
-	<div class="ss">43</div>
-	<div class="post_password"></div><div class="post_parent">0</div><div class="page_template">default</div><div class="menu_order">0</div></div><div class="row-actions"><span class="edit"><a href="https://testwp.datadelenhc.se/wp-admin/post.php?post=2&amp;action=edit" aria-label="Redigera ”Exempelsida”">Redigera</a> | </span><span class="inline hide-if-no-js"><button type="button" class="button-link editinline" aria-label="Snabbredigera ”Exempelsida” direkt" aria-expanded="false">Snabbredigera</button> | </span><span class="trash"><a href="https://testwp.datadelenhc.se/wp-admin/post.php?post=2&amp;action=trash&amp;_wpnonce=160247413a" class="submitdelete" aria-label="Flytta ”Exempelsida” till papperskorgen">Kasta i papperskorgen</a> | </span><span class="view"><a href="https://testwp.datadelenhc.se/exempelsida/" rel="bookmark" aria-label="Visa ”Exempelsida”">Visa</a></span></div><button type="button" class="toggle-row"><span class="screen-reader-text">Visa fler detaljer</span></button></td><td class="author column-author" data-colname="Författare"><a href="edit.php?post_type=page&amp;author=1">hakan.bergman@datadelenhc.se</a></td><td class="comments column-comments" data-colname="Kommentarer">		<div class="post-com-count-wrapper">
-		<span aria-hidden="true">—</span><span class="screen-reader-text">Inga kommentarer</span><span class="post-com-count post-com-count-pending post-com-count-no-pending"><span class="comment-count comment-count-no-pending" aria-hidden="true">0</span><span class="screen-reader-text">Inga kommentarer</span></span>		</div>
-		</td><td class="date column-date" data-colname="Datum">Publicerat<br><abbr title="2019-10-07 15:34:43">2019-10-07</abbr></td>		</tr>
-					<tr id="post-3" class="iedit author-self level-0 post-3 type-page status-draft hentry entry">
-			<th scope="row" class="check-column">			<label class="screen-reader-text" for="cb-select-3">
-																				Välj Integritetspolicy			</label>
-			<input id="cb-select-3" type="checkbox" name="post[]" value="3">
-			<div class="locked-indicator">
-				<span class="locked-indicator-icon" aria-hidden="true"></span>
-				<span class="screen-reader-text">
-				”Integritetspolicy” är låst				</span>
-			</div>
-			</th><td class="title column-title has-row-actions column-primary page-title" data-colname="Rubrik"><div class="locked-info"><span class="locked-avatar"></span> <span class="locked-text"></span></div>
-<strong><a class="row-title" href="https://testwp.datadelenhc.se/wp-admin/post.php?post=3&amp;action=edit" aria-label="”Integritetspolicy” (Redigera)">Integritetspolicy</a> — <span class="post-state">Utkast, </span><span class="post-state">Integritetspolicysida</span></strong>
+<p class="description" id="timezone-description">Välj en stad i samma tidszon som du, alternativt valfri tidsskillnad från UTC (GMT).</p>
 
-<div class="hidden" id="inline_3">
-	<div class="post_title">Integritetspolicy</div><div class="post_name">Integritetspolicy</div>
-	<div class="post_author">1</div>
-	<div class="comment_status">closed</div>
-	<div class="ping_status">open</div>
-	<div class="_status">draft</div>
-	<div class="jj">07</div>
-	<div class="mm">10</div>
-	<div class="aa">2019</div>
-	<div class="hh">15</div>
-	<div class="mn">34</div>
-	<div class="ss">43</div>
-	<div class="post_password"></div><div class="post_parent">0</div><div class="page_template">default</div><div class="menu_order">0</div></div><div class="row-actions"><span class="edit"><a href="https://testwp.datadelenhc.se/wp-admin/post.php?post=3&amp;action=edit" aria-label="Redigera ”Integritetspolicy”">Redigera</a> | </span><span class="inline hide-if-no-js"><button type="button" class="button-link editinline" aria-label="Snabbredigera ”Integritetspolicy” direkt" aria-expanded="false">Snabbredigera</button> | </span><span class="trash"><a href="https://testwp.datadelenhc.se/wp-admin/post.php?post=3&amp;action=trash&amp;_wpnonce=e0e4515093" class="submitdelete" aria-label="Flytta ”Integritetspolicy” till papperskorgen">Kasta i papperskorgen</a> | </span><span class="view"><a href="https://testwp.datadelenhc.se/?page_id=3&amp;preview=true" rel="bookmark" aria-label="Förhandsgranska ”Integritetspolicy”">Förhandsgranska</a></span></div><button type="button" class="toggle-row"><span class="screen-reader-text">Visa fler detaljer</span></button></td><td class="author column-author" data-colname="Författare"><a href="edit.php?post_type=page&amp;author=1">hakan.bergman@datadelenhc.se</a></td><td class="comments column-comments" data-colname="Kommentarer">		<div class="post-com-count-wrapper">
-		<span aria-hidden="true">—</span><span class="screen-reader-text">Inga kommentarer</span><span class="post-com-count post-com-count-pending post-com-count-no-pending"><span class="comment-count comment-count-no-pending" aria-hidden="true">0</span><span class="screen-reader-text">Inga kommentarer</span></span>		</div>
-		</td><td class="date column-date" data-colname="Datum">Senast modifierat<br><abbr title="2019-10-07 15:34:43">2019-10-07</abbr></td>		</tr>
-			</tbody>
+<p class="timezone-info">
+	<span id="utc-time">
+	Universal tid (<abbr>UTC</abbr>) är <code>2019-10-30 19:25:04</code>.	</span>
+	<span id="local-time">
+	Lokal tid är <code>2019-10-30 20:25:04</code>.	</span>
+</p>
 
-	<tfoot>
-	<tr>
-		<td class="manage-column column-cb check-column"><label class="screen-reader-text" for="cb-select-all-2">Välj alla</label><input id="cb-select-all-2" type="checkbox"></td><th scope="col" class="manage-column column-title column-primary sortable desc"><a href="https://testwp.datadelenhc.se/wp-admin/edit.php?post_type=page&amp;orderby=title&amp;order=asc"><span>Rubrik</span><span class="sorting-indicator"></span></a></th><th scope="col" class="manage-column column-author">Författare</th><th scope="col" class="manage-column column-comments num sortable desc"><a href="https://testwp.datadelenhc.se/wp-admin/edit.php?post_type=page&amp;orderby=comment_count&amp;order=asc"><span><span class="vers comment-grey-bubble" title="Kommentarer"><span class="screen-reader-text">Kommentarer</span></span></span><span class="sorting-indicator"></span></a></th><th scope="col" class="manage-column column-date sortable asc"><a href="https://testwp.datadelenhc.se/wp-admin/edit.php?post_type=page&amp;orderby=date&amp;order=desc"><span>Datum</span><span class="sorting-indicator"></span></a></th>	</tr>
-	</tfoot>
+<p class="timezone-info">
+<span>
+	Denna tidszon är för närvarande i standardtid.	<br>
+	 Sommartiden startar: <code>29 mars, 2020 01:00</code>.	</span>
+</p>
+</td>
 
-</table>
-			<div class="tablenav bottom">
+</tr>
+<tr>
+<th scope="row">Datumformat</th>
+<td>
+	<fieldset><legend class="screen-reader-text"><span>Datumformat</span></legend>
+	<label><input type="radio" name="date_format" value="j F, Y" checked="checked"> <span class="date-time-text format-i18n">30 oktober, 2019</span><code>j F, Y</code></label><br>
+	<label><input type="radio" name="date_format" value="Y-m-d"> <span class="date-time-text format-i18n">2019-10-30</span><code>Y-m-d</code></label><br>
+	<label><input type="radio" name="date_format" value="m/d/Y"> <span class="date-time-text format-i18n">10/30/2019</span><code>m/d/Y</code></label><br>
+	<label><input type="radio" name="date_format" value="d/m/Y"> <span class="date-time-text format-i18n">30/10/2019</span><code>d/m/Y</code></label><br>
+<label><input type="radio" name="date_format" id="date_format_custom_radio" value="\c\u\s\t\o\m"> <span class="date-time-text date-time-custom-text">Anpassad:<span class="screen-reader-text"> ange ett anpassat datumformat i följande fält</span></span></label><label for="date_format_custom" class="screen-reader-text">Anpassat datumformat:</label><input type="text" name="date_format_custom" id="date_format_custom" value="j F, Y" class="small-text"><br><p><strong>Förhandsgranska:</strong> <span class="example">30 oktober, 2019</span><span class="spinner"></span>
+</p>	</fieldset>
+</td>
+</tr>
+<tr>
+<th scope="row">Tidsformat</th>
+<td>
+	<fieldset><legend class="screen-reader-text"><span>Tidsformat</span></legend>
+	<label><input type="radio" name="time_format" value="H:i" checked="checked"> <span class="date-time-text format-i18n">20:25</span><code>H:i</code></label><br>
+	<label><input type="radio" name="time_format" value="g:i A"> <span class="date-time-text format-i18n">8:25 e m</span><code>g:i A</code></label><br>
+<label><input type="radio" name="time_format" id="time_format_custom_radio" value="\c\u\s\t\o\m"> <span class="date-time-text date-time-custom-text">Anpassad:<span class="screen-reader-text"> ange ett anpassat tidsformat i följande fält</span></span></label><label for="time_format_custom" class="screen-reader-text">Anpassat tidsformat:</label><input type="text" name="time_format_custom" id="time_format_custom" value="H:i" class="small-text"><br><p><strong>Förhandsgranska:</strong> <span class="example">20:25</span><span class="spinner"></span>
+</p>	<p class="date-time-doc"><a href="https://codex.wordpress.org/Formatting_Date_and_Time">Dokumentation för hur man formaterar datum och tid </a>.</p>
+	</fieldset>
+</td>
+</tr>
+<tr>
+<th scope="row"><label for="start_of_week">Veckan startar med</label></th>
+<td><select name="start_of_week" id="start_of_week">
 
-				<div class="alignleft actions bulkactions">
-			<label for="bulk-action-selector-bottom" class="screen-reader-text">Välj massåtgärd</label><select name="action2" id="bulk-action-selector-bottom">
-<option value="-1">Massåtgärder</option>
-	<option value="edit" class="hide-if-no-js">Redigera</option>
-	<option value="trash">Lägg i papperskorgen</option>
-</select>
-<input type="submit" id="doaction2" class="button action" value="Verkställ">
-		</div>
-					<div class="alignleft actions">
-				</div>
-		<div class="tablenav-pages one-page"><span class="displaying-num">2 objekt</span>
-<span class="pagination-links"><span class="tablenav-pages-navspan button disabled" aria-hidden="true">«</span>
-<span class="tablenav-pages-navspan button disabled" aria-hidden="true">‹</span>
-<span class="screen-reader-text">Nuvarande sida</span><span id="table-paging" class="paging-input"><span class="tablenav-paging-text">1 av <span class="total-pages">1</span></span></span>
-<span class="tablenav-pages-navspan button disabled" aria-hidden="true">›</span>
-<span class="tablenav-pages-navspan button disabled" aria-hidden="true">»</span></span></div>
-		<br class="clear">
-	</div>
-		
-</form>
+	<option value="0">söndag</option>
+	<option value="1" selected="selected">måndag</option>
+	<option value="2">tisdag</option>
+	<option value="3">onsdag</option>
+	<option value="4">torsdag</option>
+	<option value="5">fredag</option>
+	<option value="6">lördag</option></select></td>
+</tr>
+</tbody></table>
 
 
-	<form method="get"><table style="display: none"><tbody id="inlineedit">
-		
-		<tr id="inline-edit" class="
-							inline-edit-row inline-edit-row-page quick-edit-row quick-edit-row-page inline-edit-page		" style="display: none"><td colspan="5" class="colspanchange">
+<p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary" value="Spara ändringar"></p></form>
 
-		<fieldset class="inline-edit-col-left">
-			<legend class="inline-edit-legend">Snabbredigera</legend>
-			<div class="inline-edit-col">
-			
-			<label>
-				<span class="title">Rubrik</span>
-				<span class="input-text-wrap"><input type="text" name="post_title" class="ptitle" value=""></span>
-			</label>
-
-				
-			<label>
-				<span class="title">Slug</span>
-				<span class="input-text-wrap"><input type="text" name="post_name" value=""></span>
-			</label>
-
-					
-						<fieldset class="inline-edit-date">
-			<legend><span class="title">Datum</span></legend>
-				<div class="timestamp-wrap"><label><span class="screen-reader-text">Månad</span><select name="mm">
-			<option value="01" data-text="jan">01-jan</option>
-			<option value="02" data-text="feb">02-feb</option>
-			<option value="03" data-text="mar">03-mar</option>
-			<option value="04" data-text="apr">04-apr</option>
-			<option value="05" data-text="maj">05-maj</option>
-			<option value="06" data-text="jun">06-jun</option>
-			<option value="07" data-text="jul">07-jul</option>
-			<option value="08" data-text="aug">08-aug</option>
-			<option value="09" data-text="sep">09-sep</option>
-			<option value="10" data-text="okt" selected="selected">10-okt</option>
-			<option value="11" data-text="nov">11-nov</option>
-			<option value="12" data-text="dec">12-dec</option>
-</select></label> <label><span class="screen-reader-text">Dag</span><input type="text" name="jj" value="07" size="2" maxlength="2" autocomplete="off"></label>, <label><span class="screen-reader-text">År</span><input type="text" name="aa" value="2019" size="4" maxlength="4" autocomplete="off"></label> @ <label><span class="screen-reader-text">Timme</span><input type="text" name="hh" value="15" size="2" maxlength="2" autocomplete="off"></label>:<label><span class="screen-reader-text">Minut</span><input type="text" name="mn" value="34" size="2" maxlength="2" autocomplete="off"></label></div><input type="hidden" id="ss" name="ss" value="43">			</fieldset>
-			<br class="clear">
-				
-				<label class="inline-edit-author"><span class="title">Författare</span><select name="post_author" class="authors">
-	<option value="1">hakan.bergman@datadelenhc.se (hakan.bergman@datadelenhc.se)</option>
-</select></label>
-		<div class="inline-edit-group wp-clearfix">
-			<label class="alignleft">
-				<span class="title">Lösenord</span>
-				<span class="input-text-wrap"><input type="text" name="post_password" class="inline-edit-password-input" value=""></span>
-			</label>
-
-			<em class="alignleft inline-edit-or">
-				—ELLER—				</em>
-				<label class="alignleft inline-edit-private">
-				<input type="checkbox" name="keep_private" value="private">
-				<span class="checkbox-title">Privat</span>
-				</label>
-			</div>
-
-				
-		</div></fieldset>
-
-			
-		<fieldset class="inline-edit-col-right"><div class="inline-edit-col">
-
-					<label>
-			<span class="title">Överordnad</span>
-					<select name="post_parent" id="post_parent">
-	<option value="0">Huvudsida (utan överordnad)</option>
-	<option class="level-0" value="2">Exempelsida</option>
-</select>
-		</label>
-
-					
-			<label>
-				<span class="title">Ordning</span>
-				<span class="input-text-wrap"><input type="text" name="menu_order" class="inline-edit-menu-order-input" value="0"></span>
-			</label>
-
-					
-			
-			
-			
-			<div class="inline-edit-group wp-clearfix">
-								<label class="alignleft">
-					<input type="checkbox" name="comment_status" value="open">
-					<span class="checkbox-title">Tillåt kommentarer</span>
-				</label>
-						</div>
-
-				
-			<div class="inline-edit-group wp-clearfix">
-				<label class="inline-edit-status alignleft">
-					<span class="title">Status</span>
-					<select name="_status">
-														<option value="publish">Publicerat</option>
-						<option value="future">Schemalagd</option>
-																	<option value="pending">Väntar på granskning</option>
-						<option value="draft">Utkast</option>
-					</select>
-				</label>
-
-			
-			</div>
-
-			
-		</div></fieldset>
-
-					<div class="submit inline-edit-save">
-			<button type="button" class="button cancel alignleft">Avbryt</button>
-			<input type="hidden" id="_inline_edit" name="_inline_edit" value="3222bac2eb">				<button type="button" class="button button-primary save alignright">Uppdatera</button>
-				<span class="spinner"></span>
-							<input type="hidden" name="post_view" value="list">
-			<input type="hidden" name="screen" value="edit-page">
-						<br class="clear">
-			<div class="notice notice-error notice-alt inline hidden">
-				<p class="error"></p>
-			</div>
-		</div>
-		</td></tr>
-			
-		<tr id="bulk-edit" class="
-							inline-edit-row inline-edit-row-page bulk-edit-row bulk-edit-row-page bulk-edit-page		" style="display: none"><td colspan="5" class="colspanchange">
-
-		<fieldset class="inline-edit-col-left">
-			<legend class="inline-edit-legend">Massredigera</legend>
-			<div class="inline-edit-col">
-						<div id="bulk-title-div">
-				<div id="bulk-titles"></div>
-			</div>
-
-			
-			
-				
-		</div></fieldset>
-
-			
-		<fieldset class="inline-edit-col-right"><div class="inline-edit-col">
-
-			<label class="inline-edit-author"><span class="title">Författare</span><select name="post_author" class="authors">
-	<option value="-1">— Ingen ändring —</option>
-	<option value="1">hakan.bergman@datadelenhc.se (hakan.bergman@datadelenhc.se)</option>
-</select></label>		<label>
-			<span class="title">Överordnad</span>
-					<select name="post_parent" id="post_parent">
-	<option value="-1">— Ingen ändring —</option>
-	<option value="0">Huvudsida (utan överordnad)</option>
-	<option class="level-0" value="2">Exempelsida</option>
-</select>
-		</label>
-
-					
-			
-			
-			
-			<div class="inline-edit-group wp-clearfix">
-								<label class="alignleft">
-				<span class="title">Kommentarer</span>
-				<select name="comment_status">
-					<option value="">— Ingen ändring —</option>
-					<option value="open">Tillåt</option>
-					<option value="closed">Tillåt inte</option>
-				</select>
-			</label>
-					</div>
-
-			
-			<div class="inline-edit-group wp-clearfix">
-				<label class="inline-edit-status alignleft">
-					<span class="title">Status</span>
-					<select name="_status">
-									<option value="-1">— Ingen ändring —</option>
-												<option value="publish">Publicerat</option>
-						
-												<option value="private">Privat</option>
-												<option value="pending">Väntar på granskning</option>
-						<option value="draft">Utkast</option>
-					</select>
-				</label>
-
-			
-			</div>
-
-			
-		</div></fieldset>
-
-					<div class="submit inline-edit-save">
-			<button type="button" class="button cancel alignleft">Avbryt</button>
-			<input type="submit" name="bulk_edit" id="bulk_edit" class="button button-primary alignright" value="Uppdatera">			<input type="hidden" name="post_view" value="list">
-			<input type="hidden" name="screen" value="edit-page">
-						<br class="clear">
-			<div class="notice notice-error notice-alt inline hidden">
-				<p class="error"></p>
-			</div>
-		</div>
-		</td></tr>
-					</tbody></table></form>
-		
-<div id="ajax-response"></div>
-<br class="clear">
 </div>
 
 
+<div class="clear"></div></div><!-- wpbody-content -->
 <div class="clear"></div></div>
