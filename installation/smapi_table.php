@@ -2,8 +2,8 @@
     function smapi_table() {
         global $wpdb;
         global $smapi_db_version;
+        global $smapi_db_installed;
         echo $smapi_db_installed . " < > " . $smapi_db_version;
-        echo "test";
         die("hit 23");
         if ( $smapi_db_installed != $smapi_db_version) {
             die("hit");
