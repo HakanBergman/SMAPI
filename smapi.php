@@ -68,7 +68,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-smapi.php';
  * Add SMAPI tables to the WP Database (if not exists)
  * Call the function when SMAPI is activated
  */
-require_once plugin_dir_path( __FILE__ ) . 'settings/smapi_table.php';
+require_once plugin_dir_path( __FILE__ ) . 'installation/smapi_table.php';
 register_activation_hook( __FILE__, 'smapi_table' );
 
 /**
