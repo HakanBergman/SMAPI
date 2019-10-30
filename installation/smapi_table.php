@@ -1,5 +1,5 @@
 <?php
-    function smapi_table($smapi_db_version, $smapi_db_installed) {
+    function smapi_table() {
         global $wpdb;
         echo $smapi_db_installed . " < > " . $smapi_db_version;
         echo "test";
