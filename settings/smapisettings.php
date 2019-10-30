@@ -4,8 +4,7 @@
     /* Fetch our stored values from database */
     global $wpdb;
     $table_name = $wpdb->prefix . "smapi";
-    $financial_data = $wpdb->get_results("SELECT * FROM $table_name");
-    print_r($financial_data);
+    $smapi_data = $wpdb->get_results("SELECT * FROM $table_name LIMIT 1");
 ?>
 
 </table>
@@ -45,23 +44,23 @@
                                 <h2>SMAPI Financial Values</h2>
                                 <p>
                                     <div><label><strong>12 months</strong></label></div>
-                                    <input name="month_12" type="text" id="month_12" value="Password" class="regular-text" style="padding" disabled>
+                                    <input name="month_12" type="text" id="month_12" value="<?php echo $smapi_data[0]->month_12; ?>" class="regular-text" style="padding" disabled>
                                 </p>
                                 <p>
                                     <div><label><strong>24 months</strong></label></div>
-                                    <input name="month_24" type="text" id="month_24" value="Password" class="regular-text" disabled>
+                                    <input name="month_24" type="text" id="month_24" value="<?php echo $smapi_data[0]->month_24; ?>" class="regular-text" disabled>
                                 </p>
                                 <p>
                                     <div><label><strong>36 months</strong></label></div>
-                                    <input name="month_36" type="text" id="month_36" value="Password" class="regular-text" disabled>
+                                    <input name="month_36" type="text" id="month_36" value="<?php echo $smapi_data[0]->month_36; ?>" class="regular-text" disabled>
                                 </p>
                                 <p>
                                     <div><label><strong>48 months</strong></label></div>
-                                    <input name="month_48" type="text" id="month_48" value="Password" class="regular-text" disabled>
+                                    <input name="month_48" type="text" id="month_48" value="<?php echo $smapi_data[0]->month_48; ?>" class="regular-text" disabled>
                                 </p>
                                 <p>
                                     <div><label><strong>60 months</strong></label></div>
-                                    <input name="month_60" type="text" id="month_60" value="Password" class="regular-text" disabled>
+                                    <input name="month_60" type="text" id="month_60" value="<?php echo $smapi_data[0]->month_60; ?>" class="regular-text" disabled>
                                 </p>                                                                                                                                                                
                             </td>
                         </tr>
