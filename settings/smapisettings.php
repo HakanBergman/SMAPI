@@ -17,10 +17,12 @@
     /* Check if we have any credentials stored */
     $smapi_username = get_option("stored_smapi_username");
     $smapi_password = get_option("stored_smapi_password");
+    /* Fetch our unique key */
+    $smapi_unique_key = get_option("smapi_unique_key");
     /* Fetch our stored values from database */
     global $wpdb;
     $table_name = $wpdb->prefix . "smapi";
-    $smapi_data = $wpdb->get_results("SELECT * FROM $table_name LIMIT 1");
+    $smapi_data = $wpdb->get_results("SELECT * FROM $table_name LIMIT 1");    
 ?>
 
 </table>
@@ -31,6 +33,7 @@
             <h1>SMAPI Settings</h1>
             <form method="post" action="?page=smapisettings.php&storedata=true" novalidate="novalidate">
                 <input type="hidden" name="action" value="updatesmapidata">
+                <input type="hidden" name="key" value="<?php echo $smapi_unique_key; ?>">
                 <table class="form-table" role="presentation">
                     <tbody>
                         <?php if (current_user_can('administrator')) { ?>
@@ -53,6 +56,7 @@
                                         <input type="submit" name="fetchsmapidata" id="submit" class="button button-primary" value="Save credentials">
                                         <?php if (!empty($smapi_username) && !empty($smapi_password)) { ?>
                                             <button type="button" name="updatefinancialvalues" class="button button-primary updatefinancialvalues">Update Financial Values</button>
+
                                         <?php } ?>
                                     </p>
                                 </td>

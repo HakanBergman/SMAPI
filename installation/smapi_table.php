@@ -36,5 +36,8 @@
             add_option( 'smapi_db_version', $smapi_db_version);
             add_option( 'smapi_unique_key', $key);
         }
+        $key = random_bytes(5);
+        $key = bin2hex($key);
+        add_option( 'smapi_unique_key', $key);
     }
 ?>
