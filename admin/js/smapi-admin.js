@@ -31,17 +31,24 @@
 
 	/* Do this when user clicks Update Financial Values */
 	$( document ).ready(function() {
-		console.log("ready");
+		/* Verify that the update button is clicked */
 		$('.updatefinancialvalues').on('click', function(e) {
+			/* Prevent default behaviour */
 			e.preventDefault();
+			/* Disable the button from further clicks */
 			$('.updatefinancialvalues').attr("disabled", true);
-			console.log("Klickade på knappen");
-			$.post( "https://snurra.datadelenhc.com/api/v1/login", { email: "demo@smartprovider.se", password: "Password@" })
+			/* Fetch credentials */
+			var smapi_username = $('#username').val();
+			var smapi_password = $('#password').val();
+			/* Make the post to the cloud service */
+			$.post( "https://snurra.datadelenhc.com/api/v1/login", { email: smapi_username, password: smapi_password })
 			.done(function( data ) {
 				var json_string = JSON.stringify(data);
 				var json_obj = jQuery.parseJSON(json_string);
 				if (json_obj.success) {
 					console.log(json_obj.success.month_12);						
+				} else {
+					console.log("Not verified");
 				}
 				$('.updatefinancialvalues').attr("disabled", false);
 			});		
