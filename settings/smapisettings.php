@@ -52,7 +52,7 @@
                                     <p class="submit" style="margin: 0; padding: 0;">
                                         <input type="submit" name="fetchsmapidata" id="submit" class="button button-primary" value="Save credentials">
                                         <?php if (!empty($smapi_username) && !empty($smapi_password)) { ?>
-                                            <input type="submit" name="updatefinancialvalues" class="button button-primary updatefinancialvalues" value="Update Financial Values">
+                                            <button type="button" name="updatefinancialvalues" class="button button-primary updatefinancialvalues">Update Financial Values</button>
                                         <?php } ?>
                                     </p>
                                 </td>
