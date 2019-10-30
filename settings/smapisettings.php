@@ -33,29 +33,31 @@
                 <input type="hidden" name="action" value="updatesmapidata">
                 <table class="form-table" role="presentation">
                     <tbody>
-                        <tr>
-                            <td>
-                                <h2>SMAPI Credentials</h2>
-                                <p>
-                                    <div><label><strong>Username</strong></label></div>
-                                    <input name="smapiusername" type="text" id="username" value="<?php echo $smapi_username; ?>" placeholder="Username" class="regular-text">
-                                </p>
-                                <p>
-                                    <div><label><strong>Password</strong></label></div>
-                                    <input name="smapipassword" type="password" id="password" value="<?php echo $smapi_password; ?>" placeholder="Password" class="regular-text">
-                                </p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 0; margin: 0; padding-left: 10px;">
-                                <p class="submit" style="margin: 0; padding: 0;">
-                                    <input type="submit" name="fetchsmapidata" id="submit" class="button button-primary" value="Save credentials">
-                                    <?php if (!empty($smapi_username) && !empty($smapi_password)) { ?>
-                                        <input type="submit" name="updatefinancialvalues" class="button button-primary updatefinancialvalues" value="Update Financial Values">
-                                    <?php } ?>
-                                </p>
-                            </td>
-                        </tr>
+                        <?php if (current_user_can('administrator')) { ?>
+                            <tr>
+                                <td>
+                                    <h2>SMAPI Credentials</h2>
+                                    <p>
+                                        <div><label><strong>Username</strong></label></div>
+                                        <input name="smapiusername" type="text" id="username" value="<?php echo $smapi_username; ?>" placeholder="Username" class="regular-text">
+                                    </p>
+                                    <p>
+                                        <div><label><strong>Password</strong></label></div>
+                                        <input name="smapipassword" type="password" id="password" value="<?php echo $smapi_password; ?>" placeholder="Password" class="regular-text">
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0; margin: 0; padding-left: 10px;">
+                                    <p class="submit" style="margin: 0; padding: 0;">
+                                        <input type="submit" name="fetchsmapidata" id="submit" class="button button-primary" value="Save credentials">
+                                        <?php if (!empty($smapi_username) && !empty($smapi_password)) { ?>
+                                            <input type="submit" name="updatefinancialvalues" class="button button-primary updatefinancialvalues" value="Update Financial Values">
+                                        <?php } ?>
+                                    </p>
+                                </td>
+                            </tr>
+                        <?php } ?>
                         <tr>
                             <td>
                                 <hr />
