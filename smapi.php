@@ -74,6 +74,18 @@ function smapi_admin_menu() {
 }
 
 /**
+ * Function to render the SMAP Settings page
+ */
+
+function smapi_settings_page(){
+	?>
+	<div class="wrap">
+		<h2>Welcome To My Plugin</h2>
+	</div>
+	<?php
+}
+
+/**
  * Begins execution of the plugin.
  *
  * Since everything within the plugin is registered via hooks,
