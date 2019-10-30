@@ -10,6 +10,10 @@
                 <table class="form-table" role="presentation">
                     <tbody>
                         <tr>
+                            <td>
+                                <h2>SMAPI Credentials</h2>
+                            </td>
+                        <tr>
                             <th scope="row"><label for="blogname">Webbplatsrubrik</label></th>
                             <td><input name="blogname" type="text" id="blogname" value="WordPress - Test och demoversion" class="regular-text"></td>
                         </tr>
