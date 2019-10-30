@@ -7,7 +7,6 @@
                 <input type="hidden" name="action" value="update">
                 <input type="hidden" id="_wpnonce" name="_wpnonce" value="be9b3279a3">
                 <input type="hidden" name="_wp_http_referer" value="/wp-admin/options-general.php">
-                <p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary" value="Spara ändringar"></p>
                 <table class="form-table" role="presentation">
                     <tbody>
                         <tr>
@@ -21,6 +20,7 @@
                         </tr>
                     </tbody>
                 </table>
+                <p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary" value="Spara ändringar"></p>
             </form>
         </div>
     </div>
