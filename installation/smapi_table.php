@@ -4,7 +4,6 @@
         global $smapi_db_version;
         global $smapi_db_installed;
         if ( $smapi_db_installed != $smapi_db_version) {
-            die("hit");
             $charset_collate = $wpdb->get_charset_collate();
             $table_name = $wpdb->prefix . "smapi";
             /* Create the table */
