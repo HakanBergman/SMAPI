@@ -46,10 +46,14 @@
 				var json_string = JSON.stringify(data);
 				var json_obj = jQuery.parseJSON(json_string);
 				if (json_obj.success) {
-					console.log(json_obj.success.month_12);						
-				} else {
-					console.log("Not verified");
+					var month_12 = json_obj.success.month_12;
+					var month_24 = json_obj.success.month_24;
+					var month_36 = json_obj.success.month_36;
+					var month_48 = json_obj.success.month_48;
+					var month_60 = json_obj.success.month_60;					
+					console.log(month_12 + ' ' + month_24 + ' ' + month_36 + ' ' + month_48 + ' ' + month_60);
 				}
+				/* Enable button for clicks */
 				$('.updatefinancialvalues').attr("disabled", false);
 			});		
 		});
