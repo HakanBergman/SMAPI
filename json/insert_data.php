@@ -10,7 +10,8 @@
             /* Update our db table with the fetched values */
             global $wpdb;
             $table_name  = $wpdb->prefix."smapi";
-            $wpdb->query( $wpdb->prepare("UPDATE $table_name SET month_12 = $_POST['month_12'], month_24 = $_POST['month_24'], month_36 = $_POST['month_36'], month_48 = $_POST['month_48'], month_60 = $_POST['month_60']"));
+            $month_12 = array('month_12' => $_POST['month_12']);
+            $wpdb->update($table_name, $month_12); 
         } else {
             die('Unauthorized access');
         }
