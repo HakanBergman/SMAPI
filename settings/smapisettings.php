@@ -1,7 +1,10 @@
 <?php
     /* Update our stored values in the database */
     if ($_POST['fetchsmapidata'] && $_POST['action'] == 'updatesmapidata' && $_GET['storedata'] == true) {
-       echo "something was posted";
+        /* Button was pressed, now check that this user is indeed an adminsistrator */
+        if (current_user_can('administrator')) {
+            echo "something was posted";
+        }
     }
     /* Fetch our stored values from database */
     global $wpdb;
