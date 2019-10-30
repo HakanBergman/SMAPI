@@ -33,7 +33,7 @@
             <h1>SMAPI Settings</h1>
             <form method="post" action="?page=smapisettings.php&storedata=true" novalidate="novalidate">
                 <input type="hidden" name="action" value="updatesmapidata">
-                <input type="hidden" name="key" value="<?php echo $smapi_unique_key; ?>">
+                <input type="hidden" name="key" class="smapi_key" value="<?php echo $smapi_unique_key; ?>">
                 <table class="form-table" role="presentation">
                     <tbody>
                         <?php if (current_user_can('administrator')) { ?>
