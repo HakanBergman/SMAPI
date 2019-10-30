@@ -9,7 +9,7 @@
                 /* User have pushed the right button */
                 /* User is an administrator */
                 /* User have entered a username and a password */
-                echo plugin_dir_path( __FILE__ );
+                echo $SMAPI_PLUGIN_PATH;
                 #require_once plugin_dir_path( __FILE__ ) . 'json/fetch_data.php';
             }
         }
