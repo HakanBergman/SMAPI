@@ -1,8 +1,9 @@
 <?php
     /* Update our stored values in the database */
-    if ($_POST['fetchsmapidata'] && $_POST['action'] == 'updatesmapidata' && $_GET['storedata'] == true) {
-        echo "something was posted";
-    }
+    #if ($_POST['fetchsmapidata'] && $_POST['action'] == 'updatesmapidata' && $_GET['storedata'] == true) {
+       # echo "something was posted";
+    #}
+    if ($_POST['fetchsmapidata']) { }
     /* Fetch our stored values from database */
     global $wpdb;
     $table_name = $wpdb->prefix . "smapi";
