@@ -72,7 +72,7 @@ require_once plugin_dir_path( __FILE__ ) . 'installation/smapi_table.php';
 $smapi_db_version = '0.5';
 $smapi_db_installed = get_option( "smapi_db_version");
 $args = [$smapi_db_version, $smapi_db_installed];
-register_activation_hook( __FILE__, 'smapi_table' );
+register_activation_hook( __FILE__, 'smapi_table()use($args)' );
 
 /**
  * Add SMAPI settings to the admin menu
