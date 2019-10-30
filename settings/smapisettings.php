@@ -9,8 +9,8 @@
                 /* User have pushed the right button */
                 /* User is an administrator */
                 /* User have entered a username and a password */
-                add_option( 'stored_smapi_username', $_POST['smapiusername']);
-                add_option( 'stored_smapi_password', $_POST['smapipassword']);
+                update_option('stored_smapi_username', $_POST['smapiusername']);
+                update_option('stored_smapi_password', $_POST['smapipassword']);
             }
         }
     }
