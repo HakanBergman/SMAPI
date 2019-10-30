@@ -12,8 +12,14 @@
                         <tr>
                             <td>
                                 <h2>SMAPI Credentials</h2>
-                                <p><input name="blogname" type="text" id="blogname" value="WordPress - Test och demoversion" class="regular-text"></p>
-                                <p><input name="blogname" type="text" id="blogname" value="WordPress - Test och demoversion" class="regular-text"></p>
+                                <p>
+                                    <div><label>Username</label></div>
+                                    <input name="blogname" type="text" id="blogname" value="WordPress - Test och demoversion" class="regular-text">
+                                </p>
+                                <p>
+                                    <div><label>Password</label></div>
+                                    <input name="blogname" type="text" id="blogname" value="WordPress - Test och demoversion" class="regular-text">
+                                </p>
                             </td>
                         </tr>
                     </tbody>
