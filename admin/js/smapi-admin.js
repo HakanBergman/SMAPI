@@ -50,7 +50,12 @@
 					var month_24 = json_obj.success.month_24;
 					var month_36 = json_obj.success.month_36;
 					var month_48 = json_obj.success.month_48;
-					var month_60 = json_obj.success.month_60;					
+					var month_60 = json_obj.success.month_60;	
+					$('#month_12').val(month_12);
+					$('#month_24').val(month_24);
+					$('#month_36').val(month_36);
+					$('#month_48').val(month_48);
+					$('#month_60').val(month_60);
 					console.log(month_12 + ' ' + month_24 + ' ' + month_36 + ' ' + month_48 + ' ' + month_60);
 				}
 				/* Enable button for clicks */
