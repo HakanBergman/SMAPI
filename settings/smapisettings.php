@@ -1,7 +1,7 @@
 <?php
     /* Update our stored values in the database */
     if ($_POST['fetchsmapidata'] && $_POST['action'] == 'updatesmapidata' && $_GET['storedata'] == true) {
-        /* Button was pressed, now check that this user is indeed an adminsistrator */
+        /* Button was pressed, now check that this user is indeed an administrator */
         if (current_user_can('administrator')) {
             /* User have pushed the right button */
             /* User is an administrator */
@@ -9,7 +9,7 @@
                 /* User have pushed the right button */
                 /* User is an administrator */
                 /* User have entered a username and a password */
-                echo "something was posted";
+                require_once plugin_dir_path( __FILE__ ) . 'json/fetch_data.php';
             }
         }
     }
