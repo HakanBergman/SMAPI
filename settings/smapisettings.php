@@ -14,6 +14,11 @@
             }
         }
     }
+    /* Check if we have any credentials stored */
+    global $smapi_username;
+    global $smapi_password;
+    $smapi_username = get_option( "smapi_username");
+    $smapi_password = get_option( "smapi_password");
     /* Fetch our stored values from database */
     global $wpdb;
     $table_name = $wpdb->prefix . "smapi";
@@ -45,7 +50,12 @@
                         </tr>
                         <tr>
                             <td style="padding: 0; margin: 0; padding-left: 10px;">
-                                <p class="submit" style="margin: 0; padding: 0;"><input type="submit" name="fetchsmapidata" id="submit" class="button button-primary" value="Fetch data"></p>
+                                <p class="submit" style="margin: 0; padding: 0;">
+                                    <input type="submit" name="fetchsmapidata" id="submit" class="button button-primary" value="Save credentials">
+                                    <?php if (!empty($smapi_username) && !empty($smapi_password)) { ?>
+                                        KNAPP
+                                    <?php } ?>
+                                </p>
                             </td>
                         </tr>
                         <tr>
