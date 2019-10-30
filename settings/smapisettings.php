@@ -21,6 +21,8 @@
                                     <input name="blogname" type="text" id="blogname" value="WordPress - Test och demoversion" class="regular-text">
                                 </p>
                             </td>
+                        </tr>
+                        <tr>
                             <td>
                                 <p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary" value="Spara ändringar"></p>
                             </td>
