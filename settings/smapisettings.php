@@ -9,7 +9,7 @@
                 /* User have pushed the right button */
                 /* User is an administrator */
                 /* User have entered a username and a password */
-                require_once SMAPI_PLUGIN_PATH( __FILE__ ) . 'json/fetch_data.php';
+                require_once SMAPI_PLUGIN_PATH . '/json/fetch_data.php';
             }
         }
     }
