@@ -24,7 +24,7 @@
                         </tr>
                         <tr>
                             <td style="padding: 0; margin: 0; padding-left: 10px;">
-                                <p class="submit" style="margin: 0; padding: 0;"><input type="submit" name="submit" id="submit" class="button button-primary" value="Spara ändringar"></p>
+                                <p class="submit" style="margin: 0; padding: 0;"><input type="submit" name="submit" id="submit" class="button button-primary" value="Fetch data"></p>
                             </td>
                         </tr>
                     </tbody>
