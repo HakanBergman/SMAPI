@@ -34,12 +34,16 @@
 		console.log("ready");
 		$('.updatefinancialvalues').on('click', function(e) {
 			e.preventDefault();
+			$('.updatefinancialvalues').attr("disabled", true);
 			console.log("Klickade på knappen");
 			$.post( "https://snurra.datadelenhc.com/api/v1/login", { email: "demo@smartprovider.se", password: "Password@" })
 			.done(function( data ) {
-				var jstring = JSON.stringify(data);
-				var jobj = jQuery.parseJSON(jstring);
-				console.log(jobj.success.month_12);	
+				var json_string = JSON.stringify(data);
+				var json_obj = jQuery.parseJSON(json_string);
+				if (json_obj.success) {
+					console.log(json_obj.success.month_12);						
+				}
+				$('.updatefinancialvalues').attr("disabled", false);
 			});		
 		});
 	});
