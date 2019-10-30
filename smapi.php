@@ -30,12 +30,6 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-add_action( 'admin_menu', 'my_admin_menu' );
-
-function my_admin_menu() {
-	add_menu_page( 'SMAPI', 'Settings', 'manage_options', 'SMAPI/settings/settings.php', 'smapi_admin_page', 'dashicons-generic', 6  );
-}
-
 /**
  * Currently plugin version.
  * Start at version 1.0.0 and use SemVer - https://semver.org
@@ -69,6 +63,15 @@ register_deactivation_hook( __FILE__, 'deactivate_smapi' );
  * admin-specific hooks, and public-facing site hooks.
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-smapi.php';
+
+/**
+ * Add SMAPI settings to the admin menu
+ */
+
+add_action( 'admin_menu', 'smapi_admin_menu' );
+function smapi_admin_menu() {
+	add_menu_page( 'SMAPI', 'Settings', 'manage_options', 'SMAPI/settings/settings.php', 'smapi_admin_page', 'dashicons-admin-generic', 6);
+}
 
 /**
  * Begins execution of the plugin.
