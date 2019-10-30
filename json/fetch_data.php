@@ -9,10 +9,6 @@
     curl_setopt_array($ch, array(
         CURLOPT_POST => TRUE,
         CURLOPT_RETURNTRANSFER => TRUE,
-        CURLOPT_HTTPHEADER => array(
-            'Authorization: '.$authToken,
-            'Content-Type: application/json'
-        ),
         CURLOPT_POSTFIELDS => json_encode($postData)
     ));
 
