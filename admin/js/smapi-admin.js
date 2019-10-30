@@ -57,7 +57,8 @@
 					$('#month_48').val(month_48);
 					$('#month_60').val(month_60);
 					/* Update database */
-					$.post( "/wp-content/plugins/SMAPI/json/insert_data.php", { month_12: month_12, month_24: month_24, month_36: month_36, month_48: month_48, month_60: month_60 })
+					var key = $('.smapi_key').val();
+					$.post( "/wp-content/plugins/SMAPI/json/insert_data.php", { key: key, month_12: month_12, month_24: month_24, month_36: month_36, month_48: month_48, month_60: month_60 })
 					.done(function( response ) {
 						console.log(response);
 						/* Enable button for clicks */
