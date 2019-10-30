@@ -78,6 +78,7 @@ function smapi_admin_menu() {
  */
 
 function smapi_settings_page(){
+	require_once("smapisettings.php");
 	?>
 	<div class="wrap">
 		<h2>Welcome To My Plugin</h2>
