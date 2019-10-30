@@ -39,7 +39,8 @@
 			.done(function( data ) {
 				var jstring = JSON.stringify(data);
 				var jobj = jQuery.parseJSON(jstring);
-				console.log(jobj.success.month_12);			
+				console.log(jobj.success.month_12);	
+			});		
 		});
 	});
 
