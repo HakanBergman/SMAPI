@@ -33,12 +33,11 @@
 	$('.updatefinancialvalues').on('click', function(e) {
 		e.preventDefault();
 		console.log("Klickade på knappen");
-		$.post( "https://snurra.datadelenhc.com/api/v1/login", { email: "demo@smartprovider.se", password: "Password@" })
-		.done(function( data ) {
-		var jstring = JSON.stringify(data);
-		var jobj = jQuery.parseJSON(jstring);
-		console.log(jobj.success.month_12);
-		});
+		//$.post( "https://snurra.datadelenhc.com/api/v1/login", { email: "demo@smartprovider.se", password: "Password@" })
+		//.done(function( data ) {
+		//var jstring = JSON.stringify(data);
+		//var jobj = jQuery.parseJSON(jstring);
+		//console.log(jobj.success.month_12);
 	});
 
 })( jQuery );
