@@ -9,14 +9,12 @@
                 /* User have pushed the right button */
                 /* User is an administrator */
                 /* User have entered a username and a password */
-                add_option( 'smapi_username', $_POST['smapiusername']);
-                add_option( 'smapi_password', $_POST['smapipassword']);
+                add_option( 'stored_smapi_username', $_POST['smapiusername']);
+                add_option( 'stored_smapi_password', $_POST['smapipassword']);
             }
         }
     }
     /* Check if we have any credentials stored */
-    global $smapi_username;
-    global $smapi_password;
     $smapi_username = get_option("smapi_username");
     $smapi_password = get_option("smapi_password");
     echo $smapi_username . " " . $smapi_password;
