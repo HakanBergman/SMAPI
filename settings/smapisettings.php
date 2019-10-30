@@ -9,7 +9,8 @@
                 /* User have pushed the right button */
                 /* User is an administrator */
                 /* User have entered a username and a password */
-                require_once SMAPI_PLUGIN_PATH . '/json/fetch_data.php';
+                add_option( 'smapi_username', $_POST['username']);
+                add_option( 'smapi_password', $_POST['password']);
             }
         }
     }
