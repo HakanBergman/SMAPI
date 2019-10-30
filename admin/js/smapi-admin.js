@@ -59,10 +59,10 @@
 				}
 			});	
 			/* Update database */
-			$.post( "/wp-content/plugins/SMAPI/json/insert_data.php", { month_12: month_12, month_24: month_24, month_36: month_36, month_48: month_48, month_60: month_60 })
-			.done(function( data ) {
-				console.log(data);
-			});				
+			//$.post( "/wp-content/plugins/SMAPI/json/insert_data.php", { month_12: month_12, month_24: month_24, month_36: month_36, month_48: month_48, month_60: month_60 })
+			//.done(function( data ) {
+			//	console.log(data);
+			//});				
 			/* Enable button for clicks */
 			$('.updatefinancialvalues').attr("disabled", false);			
 		});
