@@ -70,6 +70,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-smapi.php';
  */
 $smapi_db_version = '0.5';
 $smapi_db_installed = get_option( "smapi_db_version");
+echo $smapi_db_version;
 function smapi_table() {
 	global $wpdb;
 	global $smapi_db_version;	
@@ -105,7 +106,6 @@ function smapi_table() {
 		);	
 
 		/* Tell WordPress this script has been run */
-		$smapi_db_version = '1.0';
 		add_option( 'smapi_db_version', $smapi_db_version);
 	}
 }
