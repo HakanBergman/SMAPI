@@ -13,7 +13,7 @@
  * @package           Smapi
  *
  * @wordpress-plugin
- * Plugin Name:       Smarprovider API
+ * Plugin Name:       Smartprovider API
  * Plugin URI:        https://github.com/HakanBergman/SMAPI.git
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
  * Version:           1.0.0
