@@ -33,7 +33,7 @@ if ( ! defined( 'WPINC' ) ) {
 add_action( 'admin_menu', 'my_admin_menu' );
 
 function my_admin_menu() {
-	add_menu_page( 'My Top Level Menu Example', 'Top Level Menu', 'manage_options', 'SMAPI/myplugin-admin-page.php', 'myplguin_admin_page', 'dashicons-tickets', 6  );
+	add_menu_page( 'SMAPI', 'Settings', 'manage_options', 'SMAPI/settings/settings.php', 'smapi_admin_page', 'dashicons-generic', 6  );
 }
 
 /**
