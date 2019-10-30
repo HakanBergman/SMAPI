@@ -68,46 +68,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-smapi.php';
  * Add SMAPI tables to the WP Database (if not exists)
  * Call the function when SMAPI is activated
  */
-$smapi_db_version = '0.5';
-$smapi_db_installed = get_option( "smapi_db_version");
-function smapi_table($smapi_db_version = $smapi_db_version) {
-	global $wpdb;
-	global $smapi_db_version;	
-	global $smapi_db_installed;
-	echo $smapi_db_installed . " < > " . $smapi_db_version;
-	echo "test";
-	die("hit 23");
-	if ( $smapi_db_installed != $smapi_db_version) {
-		die("hit");
-		$charset_collate = $wpdb->get_charset_collate();
-		$table_name = $wpdb->prefix . "smapi";
-		/* Create the table */
-		$sql = "CREATE TABLE IF NOT EXISTS $table_name (
-		month_12 varchar(4) NOT NULL,
-		month_24 varchar(4) NOT NULL,
-		month_36 varchar(4) NOT NULL,
-		month_48 varchar(4) NOT NULL,
-		month_60 varchar(4) NOT NULL
-		) $charset_collate;";	
-		require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
-		dbDelta( $sql );
-
-		/* Insert sample data */
-		$wpdb->insert( 
-			$table_name, 
-			array( 
-				'month_12' => '1.0', 
-				'month_24' => '1.0',
-				'month_36' => '1.0',
-				'month_48' => '1.0',
-				'month_60' => '1.0',
-			) 
-		);	
-
-		/* Tell WordPress this script has been run */
-		add_option( 'smapi_db_version', $smapi_db_version);
-	}
-}
+require_once plugin_dir_path( __FILE__ ) . 'settings/smapi_table.php';
 register_activation_hook( __FILE__, 'smapi_table' );
 
 /**
@@ -122,7 +83,6 @@ function smapi_admin_menu() {
 /**
  * Function to render the SMAP Settings page
  */
-
 function smapi_settings_page(){
 	require_once("settings/smapisettings.php");
 }
