@@ -14,11 +14,11 @@
                                 <h2>SMAPI Credentials</h2>
                                 <p>
                                     <div><label><strong>Username</strong></label></div>
-                                    <input name="blogname" type="text" id="blogname" value="WordPress - Test och demoversion" class="regular-text">
+                                    <input name="username" type="text" id="username" placeholder="Username" class="regular-text">
                                 </p>
                                 <p>
                                     <div><label><strong>Password</strong></label></div>
-                                    <input name="blogname" type="text" id="blogname" value="WordPress - Test och demoversion" class="regular-text">
+                                    <input name="password" type="password" id="password" placeholder="Password" class="regular-text">
                                 </p>
                             </td>
                         </tr>
