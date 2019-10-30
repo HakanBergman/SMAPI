@@ -71,15 +71,14 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-smapi.php';
 $smapi_db_version = '0.5';
 $smapi_db_installed = get_option( "smapi_db_version");
 function smapi_table() {
+	global $wpdb;
+	global $smapi_db_version;	
 	echo $smapi_db_installed . " < > " . $smapi_db_version;
 	die("hit 23");
 	if ( $smapi_db_installed != $smapi_db_version) {
 		die("hit");
-		global $wpdb;
-		global $smapi_db_version;
 		$charset_collate = $wpdb->get_charset_collate();
 		$table_name = $wpdb->prefix . "smapi";
-
 		/* Create the table */
 		$sql = "CREATE TABLE IF NOT EXISTS $table_name (
 		month_12 varchar(4) NOT NULL,
