@@ -69,9 +69,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-smapi.php';
  * Call the function when SMAPI is activated
  */
 $smapi_db_version = '0.5';
-$smapi_db_installed = get_option( "jal_db_version");
+$smapi_db_installed = get_option( "smapi_db_version");
 function smapi_table() {
 	if ( $smapi_db_installed != $smapi_db_version) {
+		die("hit");
 		global $wpdb;
 		global $smapi_db_version;
 		$charset_collate = $wpdb->get_charset_collate();
