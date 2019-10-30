@@ -12,15 +12,9 @@
                         <tr>
                             <td>
                                 <h2>SMAPI Credentials</h2>
+                                <p><input name="blogname" type="text" id="blogname" value="WordPress - Test och demoversion" class="regular-text"></p>
+                                <p><input name="blogname" type="text" id="blogname" value="WordPress - Test och demoversion" class="regular-text"></p>
                             </td>
-                        <tr>
-                            <th scope="row"><label for="blogname">Webbplatsrubrik</label></th>
-                            <td><input name="blogname" type="text" id="blogname" value="WordPress - Test och demoversion" class="regular-text"></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><label for="blogdescription">Slogan</label></th>
-                            <td><input name="blogdescription" type="text" id="blogdescription" aria-describedby="tagline-description" value="En till WordPress-webbplats" class="regular-text">
-                            <p class="description" id="tagline-description">Berätta med några ord vad den här webbplatsen handlar om.</p></td>
                         </tr>
                     </tbody>
                 </table>
