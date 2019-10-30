@@ -70,7 +70,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-smapi.php';
 
 add_action( 'admin_menu', 'smapi_admin_menu' );
 function smapi_admin_menu() {
-	add_menu_page( 'SMAPI', 'SMAPI Settings', 'manage_options', 'smapisettings.php', 'smapi_admin_page', 'dashicons-admin-generic', 6);
+	add_menu_page( 'SMAPI', 'SMAPI Settings', 'manage_options', 'smapisettings.php', 'smapi_settings_page', 'dashicons-admin-generic');
 }
 
 /**
