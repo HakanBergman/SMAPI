@@ -8,6 +8,19 @@
                 <input type="hidden" id="_wpnonce" name="_wpnonce" value="be9b3279a3">
                 <input type="hidden" name="_wp_http_referer" value="/wp-admin/options-general.php">
                 <p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary" value="Spara ändringar"></p>
+                <table class="form-table" role="presentation">
+                    <tbody>
+                        <tr>
+                            <th scope="row"><label for="blogname">Webbplatsrubrik</label></th>
+                            <td><input name="blogname" type="text" id="blogname" value="WordPress - Test och demoversion" class="regular-text"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="blogdescription">Slogan</label></th>
+                            <td><input name="blogdescription" type="text" id="blogdescription" aria-describedby="tagline-description" value="En till WordPress-webbplats" class="regular-text">
+                            <p class="description" id="tagline-description">Berätta med några ord vad den här webbplatsen handlar om.</p></td>
+                        </tr>
+                    </tbody>
+                </table>
             </form>
         </div>
     </div>
