@@ -9,7 +9,8 @@
                 /* User have pushed the right button */
                 /* User is an administrator */
                 /* User have entered a username and a password */
-                require_once plugin_dir_path( __FILE__ ) . 'json/fetch_data.php';
+                echo plugin_dir_path( __FILE__ );
+                #require_once plugin_dir_path( __FILE__ ) . 'json/fetch_data.php';
             }
         }
     }
