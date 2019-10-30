@@ -3,8 +3,6 @@
         global $wpdb;
         global $smapi_db_version;
         global $smapi_db_installed;
-        echo $smapi_db_installed . " < > " . $smapi_db_version;
-        die("hit 23");
         if ( $smapi_db_installed != $smapi_db_version) {
             die("hit");
             $charset_collate = $wpdb->get_charset_collate();
