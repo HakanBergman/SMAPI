@@ -1,3 +1,15 @@
+<?php
+    /* Update our stored values in the database */
+        /* TODO*/
+    /* Fetch our stored values from database */
+    global $wpdb;
+    $table_name = $wpdb->prefix . "smapi";
+    $financial_data = $wpdb->get_results("SELECT * FROM $table_name");
+    print_r($financial_data);
+?>
+
+</table>
+
 <div id="smapisettings" role="main">
     <div id="smapisettings-content">		
         <div class="wrap">
@@ -33,7 +45,7 @@
                                 <h2>SMAPI Financial Values</h2>
                                 <p>
                                     <div><label><strong>12 months</strong></label></div>
-                                    <input name="month_12" type="text" id="month_12" value="Password" class="regular-text" disabled>
+                                    <input name="month_12" type="text" id="month_12" value="Password" class="regular-text" style="padding" disabled>
                                 </p>
                                 <p>
                                     <div><label><strong>24 months</strong></label></div>
