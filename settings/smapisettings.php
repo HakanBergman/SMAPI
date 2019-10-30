@@ -1,6 +1,8 @@
 <?php
     /* Update our stored values in the database */
-        /* TODO*/
+    if ($_POST['fetchsmapidata'] && $_POST['action'] == 'updatesmapidata' && $_GET['storedata'] == true) {
+        echo "something was posted";
+    }
     /* Fetch our stored values from database */
     global $wpdb;
     $table_name = $wpdb->prefix . "smapi";
@@ -13,11 +15,8 @@
     <div id="smapisettings-content">		
         <div class="wrap">
             <h1>SMAPI Settings</h1>
-            <form method="post" action="options.php" novalidate="novalidate">
-                <input type="hidden" name="option_page" value="general">
-                <input type="hidden" name="action" value="update">
-                <input type="hidden" id="_wpnonce" name="_wpnonce" value="be9b3279a3">
-                <input type="hidden" name="_wp_http_referer" value="/wp-admin/options-general.php">
+            <form method="post" action="?storedata=true" novalidate="novalidate">
+                <input type="hidden" name="action" value="updatesmapidata">
                 <table class="form-table" role="presentation">
                     <tbody>
                         <tr>
@@ -35,7 +34,7 @@
                         </tr>
                         <tr>
                             <td style="padding: 0; margin: 0; padding-left: 10px;">
-                                <p class="submit" style="margin: 0; padding: 0;"><input type="submit" name="submit" id="submit" class="button button-primary" value="Fetch data"></p>
+                                <p class="submit" style="margin: 0; padding: 0;"><input type="submit" name="fetchsmapidata" id="submit" class="button button-primary" value="Fetch data"></p>
                             </td>
                         </tr>
                         <tr>
