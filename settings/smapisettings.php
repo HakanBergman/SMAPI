@@ -10,25 +10,7 @@
                 /* User is an administrator */
                 /* User have entered a username and a password */
                 update_option('stored_smapi_username', $_POST['smapiusername']);
-                update_option('stored_smapi_password', $_POST['smapipassword']);
-                    $data = array("email" => $_POST['smapiusername'], "password" => $_POST['smapipassword']);   
-                    $data_string = json_encode($data);                
-                    $postdata = http_build_query($data);        
-                    $opts = array('https' =>
-                        array(
-                            'method'  => 'POST',
-                            'header'  => 'Content-type: application/x-www-form-urlencoded',
-                            'content' => $postdata
-                        )
-                    );
-                
-                    if($username && $password)
-                    {
-                        $opts['http']['header'] = ("Authorization: Basic " . base64_encode("$username:$password"));
-                    }
-                    $url = "http://snurra.datadelenhc.com/api/v1/login";
-                    $context = stream_context_create($opts);
-                    return file_get_contents($url, false, $context);          
+                update_option('stored_smapi_password', $_POST['smapipassword']);         
             }
         }
     }
