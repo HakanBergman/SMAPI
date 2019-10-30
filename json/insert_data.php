@@ -1,5 +1,5 @@
 <?php
-    
-    return "done";
+  
+  echo "done";
 
 ?>
