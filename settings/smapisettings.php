@@ -24,7 +24,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary" value="Spara ändringar"></p>
+                                <p class="submit" style="margin: 0; padding: 0;"><input type="submit" name="submit" id="submit" class="button button-primary" value="Spara ändringar"></p>
                             </td>
                         </tr>
                     </tbody>
