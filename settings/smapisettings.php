@@ -27,6 +27,32 @@
                                 <p class="submit" style="margin: 0; padding: 0;"><input type="submit" name="submit" id="submit" class="button button-primary" value="Fetch data"></p>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <hr />
+                                <h2>SMAPI Financial Values</h2>
+                                <p>
+                                    <div><label><strong>12 months</strong></label></div>
+                                    <input name="month_12" type="text" id="month_12" value="Password" class="regular-text" disabled>
+                                </p>
+                                <p>
+                                    <div><label><strong>24 months</strong></label></div>
+                                    <input name="month_24" type="text" id="month_24" value="Password" class="regular-text" disabled>
+                                </p>
+                                <p>
+                                    <div><label><strong>36 months</strong></label></div>
+                                    <input name="month_36" type="text" id="month_36" value="Password" class="regular-text" disabled>
+                                </p>
+                                <p>
+                                    <div><label><strong>48 months</strong></label></div>
+                                    <input name="month_48" type="text" id="month_48" value="Password" class="regular-text" disabled>
+                                </p>
+                                <p>
+                                    <div><label><strong>60 months</strong></label></div>
+                                    <input name="month_60" type="text" id="month_60" value="Password" class="regular-text" disabled>
+                                </p>                                                                                                                                                                
+                            </td>
+                        </tr>
                     </tbody>
                 </table>                
             </form>
