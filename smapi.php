@@ -69,10 +69,9 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-smapi.php';
  * Call the function when SMAPI is activated
  */
 require_once plugin_dir_path( __FILE__ ) . 'installation/smapi_table.php';
-$smapi_db_version = '0.5';
-$smapi_db_installed = get_option( "smapi_db_version");
-$args = [$smapi_db_version, $smapi_db_installed];
-register_activation_hook( __FILE__, function('smapi_table')use($args));
+global $smapi_db_version = '0.5';
+global $smapi_db_installed = get_option( "smapi_db_version");
+register_activation_hook( __FILE__, 'smapi_table');
 
 /**
  * Add SMAPI settings to the admin menu
