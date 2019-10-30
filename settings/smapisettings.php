@@ -17,7 +17,6 @@
     /* Check if we have any credentials stored */
     $smapi_username = get_option("stored_smapi_username");
     $smapi_password = get_option("stored_smapi_password");
-    echo $smapi_username . " <> " . $smapi_password;
     /* Fetch our stored values from database */
     global $wpdb;
     $table_name = $wpdb->prefix . "smapi";
@@ -39,11 +38,11 @@
                                 <h2>SMAPI Credentials</h2>
                                 <p>
                                     <div><label><strong>Username</strong></label></div>
-                                    <input name="smapiusername" type="text" id="username" placeholder="Username" class="regular-text">
+                                    <input name="smapiusername" type="text" id="username" value="<?php echo $smapi_username; ?>" placeholder="Username" class="regular-text">
                                 </p>
                                 <p>
                                     <div><label><strong>Password</strong></label></div>
-                                    <input name="smapipassword" type="password" id="password" placeholder="Password" class="regular-text">
+                                    <input name="smapipassword" type="password" id="password" value="<?php echo $smapi_password; ?>" placeholder="Password" class="regular-text">
                                 </p>
                             </td>
                         </tr>
@@ -52,7 +51,7 @@
                                 <p class="submit" style="margin: 0; padding: 0;">
                                     <input type="submit" name="fetchsmapidata" id="submit" class="button button-primary" value="Save credentials">
                                     <?php if (!empty($smapi_username) && !empty($smapi_password)) { ?>
-                                        KNAPP
+                                        <input type="submit" name="updatefinancialvalues" class="button button-primary updatefinancialvalues" value="Update Financial Values">
                                     <?php } ?>
                                 </p>
                             </td>
