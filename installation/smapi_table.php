@@ -1,10 +1,6 @@
 <?php
-    $smapi_db_version = '0.5';
-    $smapi_db_installed = get_option( "smapi_db_version");
-    function smapi_table() {
+    function smapi_table($smapi_db_version, $smapi_db_installed) {
         global $wpdb;
-        global $smapi_db_version;	
-        global $smapi_db_installed;
         echo $smapi_db_installed . " < > " . $smapi_db_version;
         echo "test";
         die("hit 23");
