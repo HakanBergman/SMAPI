@@ -13,18 +13,20 @@
                             <td>
                                 <h2>SMAPI Credentials</h2>
                                 <p>
-                                    <div><label>Username</label></div>
+                                    <div><label><strong>Username</strong></label></div>
                                     <input name="blogname" type="text" id="blogname" value="WordPress - Test och demoversion" class="regular-text">
                                 </p>
                                 <p>
-                                    <div><label>Password</label></div>
+                                    <div><label><strong>Password</strong></label></div>
                                     <input name="blogname" type="text" id="blogname" value="WordPress - Test och demoversion" class="regular-text">
                                 </p>
                             </td>
+                            <td>
+                                <p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary" value="Spara ändringar"></p>
+                            </td>
                         </tr>
                     </tbody>
-                </table>
-                <p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary" value="Spara ändringar"></p>
+                </table>                
             </form>
         </div>
     </div>
