@@ -29,12 +29,16 @@
 	 * practising this, we should strive to set a better example in our own work.
 	 */
 
-	$.post( "https://snurra.datadelenhc.com/api/v1/login", { email: "demo@smartprovider.se", password: "Password@" })
-	.done(function( data ) {
-	  var jstring = JSON.stringify(data);
-	  var jobj = jQuery.parseJSON(jstring);
-	  console.log(jobj);
-	  console.log(jobj.success.month_12);
+	/* Do this when user clicks Update Financial Values */
+	$('.updatefinancialvalues').on('click', function(e) {
+		e.preventDefault();
+		console.log("Klickade på knappen");
+		$.post( "https://snurra.datadelenhc.com/api/v1/login", { email: "demo@smartprovider.se", password: "Password@" })
+		.done(function( data ) {
+		var jstring = JSON.stringify(data);
+		var jobj = jQuery.parseJSON(jstring);
+		console.log(jobj.success.month_12);
+		});
 	});
 
 })( jQuery );
