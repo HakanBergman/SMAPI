@@ -3,7 +3,14 @@
     if ($_POST['fetchsmapidata'] && $_POST['action'] == 'updatesmapidata' && $_GET['storedata'] == true) {
         /* Button was pressed, now check that this user is indeed an adminsistrator */
         if (current_user_can('administrator')) {
-            echo "something was posted";
+            /* User have pushed the right button */
+            /* User is an administrator */
+            if (!empty($_POST['smapiusername']) && !empty($_POST['smapipassword'])) {
+                /* User have pushed the right button */
+                /* User is an administrator */
+                /* User have entered a username and a password */
+                echo "something was posted";
+            }
         }
     }
     /* Fetch our stored values from database */
@@ -27,11 +34,11 @@
                                 <h2>SMAPI Credentials</h2>
                                 <p>
                                     <div><label><strong>Username</strong></label></div>
-                                    <input name="username" type="text" id="username" placeholder="Username" class="regular-text">
+                                    <input name="smapiusername" type="text" id="username" placeholder="Username" class="regular-text">
                                 </p>
                                 <p>
                                     <div><label><strong>Password</strong></label></div>
-                                    <input name="password" type="password" id="password" placeholder="Password" class="regular-text">
+                                    <input name="smapipassword" type="password" id="password" placeholder="Password" class="regular-text">
                                 </p>
                             </td>
                         </tr>
