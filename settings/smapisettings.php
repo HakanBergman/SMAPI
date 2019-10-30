@@ -15,8 +15,8 @@
         }
     }
     /* Check if we have any credentials stored */
-    $smapi_username = get_option("smapi_username");
-    $smapi_password = get_option("smapi_password");
+    $smapi_username = get_option("stored_smapi_username");
+    $smapi_password = get_option("stored_smapi_password");
     echo $smapi_username . " " . $smapi_password;
     /* Fetch our stored values from database */
     global $wpdb;
