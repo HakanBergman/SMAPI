@@ -4,12 +4,8 @@
 
         global $wpdb;
         $table_name = $wpdb->prefix."smapi";
-        $month_12 = $wpdb->query("SELECT * FROM $table_name LIMIT 1");
-        $month_24 = $wpdb->query("SELECT month_24 FROM $table_name LIMIT 1");
-        $month_36 = $wpdb->query("SELECT month_36 FROM $table_name LIMIT 1");
-        $month_48 = $wpdb->query("SELECT month_48 FROM $table_name LIMIT 1");
-        $month_60 = $wpdb->query("SELECT month_60 FROM $table_name LIMIT 1");
-        var_dump($month_12);
+        $results = $wpdb->get_results($wpdb->prepare("SELECT * $table_name WHERE LIMIT %d", 1));
+        var_dump($results);
         echo "test";
         $content =  '<form method="post" action="" id="smapi_calculator">';
             $content .= '<div class="form-group">';
