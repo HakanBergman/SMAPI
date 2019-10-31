@@ -5,8 +5,6 @@
         global $wpdb;
         $table_name = $wpdb->prefix."smapi";
         $smapi_results = $wpdb->get_results("SELECT * FROM $table_name LIMIT 1");
-        var_dump($smapi_results);
-        echo "test";
         $content =  '<form method="post" action="" id="smapi_calculator">';
             $content .= '<div class="form-group">';
                 $content .= '<label for="smapi_amount">Hur mycket vill du låna?</label>';
