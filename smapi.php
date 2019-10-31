@@ -94,7 +94,7 @@ function smapi_settings_page(){
 
 /* SMAPI Shortcodes */
 require_once plugin_dir_path( __FILE__ ) . 'shortcode/smapi_calculator.php';
-add_shortcode(‘smapi_calculator’, ‘calculator’);
+add_shortcode(‘smapi-calculator’, ‘smapi_calculator’);
 
 /**
  * Begins execution of the plugin.
