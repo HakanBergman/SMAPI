@@ -4,7 +4,7 @@
 
         global $wpdb;
         $table_name = $wpdb->prefix."smapi";
-        $results = $wpdb->get_results($wpdb->prepare("SELECT * $table_name WHERE LIMIT %d", 1));
+        $results = $wpdb->get_results("SELECT * FROM $table_name");
         var_dump($results);
         echo "test";
         $content =  '<form method="post" action="" id="smapi_calculator">';
