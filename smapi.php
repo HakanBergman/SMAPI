@@ -86,11 +86,15 @@ function smapi_admin_menu() {
 }
 
 /**
- * Function to render the SMAP Settings page
+ * Function to render the SMAPI Settings page
  */
 function smapi_settings_page(){
 	require_once("settings/smapisettings.php");
 }
+
+/* SMAPI Shortcodes */
+require_once plugin_dir_path( __FILE__ ) . 'shortcode/smapi_calculator.php';
+add_shortcode(‘smapi_calculator’, ‘smapi_calculator’);
 
 /**
  * Begins execution of the plugin.
