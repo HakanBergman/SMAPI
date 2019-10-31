@@ -63,6 +63,8 @@
 						console.log(response);
 						/* Enable button for clicks */
 						$('.updatefinancialvalues').attr("disabled", false);
+						/* Reload page to view new values */
+						location.reload();
 					});					
 				}
 				
