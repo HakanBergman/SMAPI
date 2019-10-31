@@ -8,7 +8,7 @@
         $content =  '<form method="post" action="" id="smapi_calculator">';
             $content .= '<div class="form-group">';
                 $content .= '<label for="smapi_amount">Hur mycket vill du låna?</label>';
-                $content .= '<input type="number" name="smapi_amount" id="smapi_amount" placeholder="0" /></div>';
+                $content .= '<input type="number" name="smapi_amount" id="smapi_amount" placeholder="0" />';
                 $content .= '<input type="hidden" name="smapi_interest_month_12" id="smapi_interest_month_12" value="'.$smapi_results[0]->month_12.'" />';
                 $content .= '<input type="hidden" name="smapi_interest_month_24" id="smapi_interest_month_24" value="'.$smapi_results[0]->month_24.'" />';
                 $content .= '<input type="hidden" name="smapi_interest_month_36" id="smapi_interest_month_36" value="'.$smapi_results[0]->month_36.'" />';
