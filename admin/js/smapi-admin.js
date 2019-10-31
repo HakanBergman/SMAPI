@@ -65,6 +65,12 @@
 				
 			});								
 		});
+
+		/* Do this when user enters an amount on the financial front page */
+		$('#smapi_amount').keydown(function() {
+			console.log( "Handler for .keydown() called." );
+		});
+
 	});
 
 })( jQuery );
