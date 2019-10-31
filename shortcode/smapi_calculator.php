@@ -4,16 +4,16 @@
 
         global $wpdb;
         $table_name = $wpdb->prefix."smapi";
-        #$month_12 = $wpdb->query("SELECT month_12 FROM $table_name LIMIT 1");
-        #$month_24 = $wpdb->query("SELECT month_24 FROM $table_name LIMIT 1");
-        #$month_36 = $wpdb->query("SELECT month_36 FROM $table_name LIMIT 1");
-        #$month_48 = $wpdb->query("SELECT month_48 FROM $table_name LIMIT 1");
-        #$month_60 = $wpdb->query("SELECT month_60 FROM $table_name LIMIT 1");
-        #echo $month_12;
+        $month_12 = $wpdb->query("SELECT month_12 FROM $table_name LIMIT 1");
+        $month_24 = $wpdb->query("SELECT month_24 FROM $table_name LIMIT 1");
+        $month_36 = $wpdb->query("SELECT month_36 FROM $table_name LIMIT 1");
+        $month_48 = $wpdb->query("SELECT month_48 FROM $table_name LIMIT 1");
+        $month_60 = $wpdb->query("SELECT month_60 FROM $table_name LIMIT 1");
+        echo $month_12;
         $content =  '<form method="post" action="" id="smapi_calculator">';
             $content .= '<div class="form-group">';
                 $content .= '<label for="smapi_amount">Hur mycket vill du låna?</label>';
-               # $content .= '<input type="number" name="smapi_amount" id="smapi_amount" placeholder="0" /></div>';
+                $content .= '<input type="number" name="smapi_amount" id="smapi_amount" placeholder="0" /></div>';
                # $content .= '<input type="hidden" name="smapi_interest_month_12" id="smapi_interest_month_12" value="'.echo get_option("stored_smapi_email") .'" />';
                # $content .= '<input type="hidden" name="smapi_interest_month_24" id="smapi_interest_month_24" value="'.echo get_option("stored_smapi_email") .'" />';
                # $content .= '<input type="hidden" name="smapi_interest_month_36" id="smapi_interest_month_36" value="'.echo get_option("stored_smapi_email") .'" />';
