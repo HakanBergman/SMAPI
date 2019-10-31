@@ -4,7 +4,7 @@
 
         global $wpdb;
         $table_name = $wpdb->prefix."smapi";
-        $month_12 = $wpdb->query("SELECT month_12 FROM $table_name LIMIT 1");
+        $month_12 = $wpdb->query("SELECT * FROM $table_name LIMIT 1");
         $month_24 = $wpdb->query("SELECT month_24 FROM $table_name LIMIT 1");
         $month_36 = $wpdb->query("SELECT month_36 FROM $table_name LIMIT 1");
         $month_48 = $wpdb->query("SELECT month_48 FROM $table_name LIMIT 1");
