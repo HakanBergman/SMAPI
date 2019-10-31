@@ -10,13 +10,15 @@
                 /* User is an administrator */
                 /* User have entered a username and a password */
                 update_option('stored_smapi_username', $_POST['smapiusername']);
-                update_option('stored_smapi_password', $_POST['smapipassword']);         
+                update_option('stored_smapi_password', $_POST['smapipassword']);
+                update_option('stored_smapi_email', $_POST['smapiemail']);
             }
         }
     }
     /* Check if we have any credentials stored */
     $smapi_username = get_option("stored_smapi_username");
     $smapi_password = get_option("stored_smapi_password");
+    $smapi_password = get_option("stored_smapi_email");
     /* Fetch our unique key */
     $smapi_unique_key = get_option("smapi_unique_key");
     /* Fetch our stored values from database */
@@ -48,6 +50,10 @@
                                         <div><label><strong>Password</strong></label></div>
                                         <input name="smapipassword" type="password" id="password" value="<?php echo $smapi_password; ?>" placeholder="Password" class="regular-text">
                                     </p>
+                                    <p>
+                                        <div><label><strong>E-mail</strong></label></div>
+                                        <input name="smapiemail" type="email" id="email" value="<?php echo $smapi_email; ?>" placeholder="info@domain.com" class="regular-text">
+                                    </p>                                    
                                 </td>
                             </tr>
                             <tr>
