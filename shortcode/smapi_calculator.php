@@ -1,4 +1,4 @@
-<?php function smapi_calculator() { ?>
+<?php function calculator() { ?>
 
     <form method="post" action="" id="smapi_calculator">
         <div class="form-group">
