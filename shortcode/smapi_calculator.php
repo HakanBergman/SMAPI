@@ -15,7 +15,6 @@
                 $content .= '<input type="hidden" name="smapi_interest_month_48" id="smapi_interest_month_48" value="'.$smapi_results[0]->month_48.'" />';
                 $content .= '<input type="hidden" name="smapi_interest_month_60" id="smapi_interest_month_60" value="'.$smapi_results[0]->month_60.'" />';
             $content .= '</div>';
-            $content .= '<hr />';
             $content .= '<div class="form-group">';
                 $content .= '<label for="smapi_amount">Månadskostnad över 12 månader</label>';
                 $content .= '<div><input type="number" name="smapi_month_12" id="smapi_month_12" placeholder="0" disabled/></div>';
