@@ -18,7 +18,7 @@
     /* Check if we have any credentials stored */
     $smapi_username = get_option("stored_smapi_username");
     $smapi_password = get_option("stored_smapi_password");
-    $smapi_password = get_option("stored_smapi_email");
+    $smapi_email = get_option("stored_smapi_email");
     /* Fetch our unique key */
     $smapi_unique_key = get_option("smapi_unique_key");
     /* Fetch our stored values from database */
