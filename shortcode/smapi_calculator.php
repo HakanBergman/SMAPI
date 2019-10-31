@@ -9,7 +9,7 @@
         $month_36 = $wpdb->query("SELECT month_36 FROM $table_name LIMIT 1");
         $month_48 = $wpdb->query("SELECT month_48 FROM $table_name LIMIT 1");
         $month_60 = $wpdb->query("SELECT month_60 FROM $table_name LIMIT 1");
-        var_dump($month_24);
+        var_dump($month_12);
         echo "test";
         $content =  '<form method="post" action="" id="smapi_calculator">';
             $content .= '<div class="form-group">';
