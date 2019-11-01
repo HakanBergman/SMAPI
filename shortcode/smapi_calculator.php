@@ -39,6 +39,13 @@
                 $content .= '<button type="button" name="smapi_button">Skicka offert</button>';
             $content .= '</div>';                                                      
         $content .= '</form>';
+        $content .= "<p><strong><i>Betalning</i></strong></p>";
+        $content .= "<p>Hyran i ovanstående alternativ erlägges kvartalsvis i förskott.</p>";
+        $content .= "<p><strong><i>Avtalstidens slut</i></strong></p>";
+        $content .= "<p>1) Hänvisar Smart Provider i Sverige AB till leverantören.</p>";        
+        $content .= "<hr />";
+        $content .= "<p>Alla siffror i finansieringsförslaget är ungefärliga och angivna exkl. moms och gäller efter sedvanlig kreditprövning.</p>";
+        $content .= "<p>Hör gärna av Er för eventuella frågor eller alternativa finansieringsförslag till sales@smartprovider.se</p>";
         return $content;
     }
 
