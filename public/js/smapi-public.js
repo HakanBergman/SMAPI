@@ -35,12 +35,11 @@
 		/* Do this when user enters an amount on the financial front page */
 		$('#smapi_amount').keydown(function() {
 			var money = $(this).val();
-			var month_12 = money*$('#smapi_interest_month_12').val()/12;
-			console.log($('#smapi_interest_month_12').val());
-			var month_24 = Math.round((money*($('#smapi_interest_month_24').val()/100))/24);
-			var month_36 = Math.round((money*($('#smapi_interest_month_36').val()/100))/36);
-			var month_48 = Math.round((money*($('#smapi_interest_month_48').val()/100))/48);
-			var month_60 = Math.round((money*($('#smapi_interest_month_60').val()/100))/60);
+			var month_12 = money*(jQuery('#smapi_interest_month_12').val()/100);
+			var month_24 = money*(jQuery('#smapi_interest_month_24').val()/100);
+			var month_36 = money*(jQuery('#smapi_interest_month_36').val()/100);
+			var month_48 = money*(jQuery('#smapi_interest_month_48').val()/100);
+			var month_60 = money*(jQuery('#smapi_interest_month_60').val()/100);
 			$('#smapi_month_12').val(month_12);
 			$('#smapi_month_24').val(month_24);
 			$('#smapi_month_36').val(month_36);
