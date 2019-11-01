@@ -33,7 +33,7 @@
 	$( document ).ready(function() {
 
 		/* Do this when user enters an amount on the financial front page */
-		$('#smapi_amount').keydown(function() {
+		$('#smapi_amount').keypress(function() {
 			var money = $(this).val();
 			var month_12 = money*(jQuery('#smapi_interest_month_12').val()/100);
 			var month_24 = money*(jQuery('#smapi_interest_month_24').val()/100);
