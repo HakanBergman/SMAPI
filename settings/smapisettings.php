@@ -68,6 +68,7 @@
                                 </td>
                             </tr>
                         <?php } ?>
+                        <?php /* ?>
                         <tr>
                             <td>
                                 <hr />
@@ -94,6 +95,7 @@
                                 </p>                                                                                                                                                                
                             </td>
                         </tr>
+                        <?php */ ?>
                     </tbody>
                 </table>                
             </form>
