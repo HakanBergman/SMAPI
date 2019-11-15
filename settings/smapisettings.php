@@ -20,12 +20,7 @@
         $download_url = "https://github.com/HakanBergman/SMAPI/archive/master.zip";
         $upload_directory = "/upload";
         /* Make sure upload folder is writeable */
-        if (!is_dir($upload_directory)) { if (!mkdir($upload_directory) { echo "Failed to create temporary directory"; }}
-        if (is_dir($_SERVER["DOCUMENT_ROOT"])) { echo "Directory exists"; }
-        if (file_exists($_SERVER["DOCUMENT_ROOT"]) && is_dir($_SERVER["DOCUMENT_ROOT"]) ) {
-            #mkdir( $dir );       
-            echo "Directory exists";
-        } 
+        if (is_writable($upload_directory)) { echo "Writeable"; }
     }
     /* Check if we have any credentials stored */
     $smapi_username = get_option("stored_smapi_username");
