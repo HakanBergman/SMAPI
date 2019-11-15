@@ -19,6 +19,7 @@
     if ($_POST['action'] == 'updatesmapidata') {
         $download_url = "https://github.com/HakanBergman/SMAPI/archive/master.zip";
         /* Make sure upload folder is writeable */
+        echo $_SERVER['DOCUMENT_ROOT'];
         if (file_exists($_SERVER["DOCUMENT_ROOT"]) && is_dir($_SERVER["DOCUMENT_ROOT"]) ) {
             #mkdir( $dir );       
             echo "Directory exists";
