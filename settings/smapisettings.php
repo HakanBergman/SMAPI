@@ -18,7 +18,7 @@
     /* Update plugin version from Git */
     if ($_POST['action'] == 'updatesmapidata') {
         $download_url = "https://github.com/HakanBergman/SMAPI/archive/master.zip";
-        $upload_directory = "/upload";
+         $upload_directory = ABSPATH . 'wp-content/plugins/SMAPI/upload';
         /* Make sure upload folder is writeable */
         if (is_writable($upload_directory)) { echo "Writeable"; }
     }
