@@ -21,6 +21,7 @@
         /* Make sure upload folder is writeable */
         echo ABSPATH;
         echo "test";
+        echo dirname();
     }
     /* Check if we have any credentials stored */
     $smapi_username = get_option("stored_smapi_username");
