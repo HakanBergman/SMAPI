@@ -19,7 +19,7 @@
     if ($_POST['action'] == 'updatesmapidata') {
         $download_url = "https://github.com/HakanBergman/SMAPI/archive/master.zip";
         /* Make sure upload folder is writeable */
-        echo ABSPATH;
+        echo dirname(__FILE__);
         echo plugin_dir_path( __DIR__ );
     }
     /* Check if we have any credentials stored */
