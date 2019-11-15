@@ -20,7 +20,7 @@
         $download_url = "https://github.com/HakanBergman/SMAPI/archive/master.zip";
         $upload_directory = "/upload";
         /* Make sure upload folder is writeable */
-        if (is_dir($upload_directory)) { echo "is directory"; }
+        if (!is_dir($upload_directory)) { echo "is directory"; }
         if (is_dir($_SERVER["DOCUMENT_ROOT"])) { echo "Directory exists"; }
         if (file_exists($_SERVER["DOCUMENT_ROOT"]) && is_dir($_SERVER["DOCUMENT_ROOT"]) ) {
             #mkdir( $dir );       
