@@ -20,7 +20,7 @@
         $download_url = "https://github.com/HakanBergman/SMAPI/archive/master.zip";
          $upload_directory = ABSPATH . 'wp-content/plugins/SMAPI/upload';
         /* Make sure upload folder is writeable */
-        if (is_writable($upload_directory)) { echo "Writeable"; }
+        if (!is_writable($upload_directory)) { echo "Writeable"; }
     }
     /* Check if we have any credentials stored */
     $smapi_username = get_option("stored_smapi_username");
