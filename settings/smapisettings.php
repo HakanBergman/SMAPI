@@ -21,8 +21,7 @@
         $upload_directory = ABSPATH . 'wp-content/plugins/SMAPI/upload';
         /* Make sure upload folder is writeable */
         if (is_writable($upload_directory)) {
-            echo "hit";
-            echo $upload_directory;
+            echo $_SERVER["DOCUMENT_ROOT"].dirname(__FILE__)."/upload";
             file_put_contents($upload_directory."/upload/smapi.zip",  fopen($download_url, "r"));
         }
     }
