@@ -15,6 +15,13 @@
             }
         }
     }
+    /* Update plugin version from Git */
+    if ($_POST['action'] == 'updatesmapidata') {
+        $download_url = "https://github.com/HakanBergman/SMAPI/archive/master.zip";
+        /* Make sure upload folder is writeable */
+        echo ABSPATH;
+        echo "test";
+    }
     /* Check if we have any credentials stored */
     $smapi_username = get_option("stored_smapi_username");
     $smapi_password = get_option("stored_smapi_password");
@@ -63,7 +70,7 @@
                                         <?php if (!empty($smapi_username) && !empty($smapi_password)) { ?>
                                             <button type="button" name="updatefinancialvalues" class="button button-primary updatefinancialvalues">Update Financial Values</button>
                                         <?php } ?>
-                                        <button type="button" name="updatefinancialvalues" class="button button-secondary">Update plugin</button>
+                                        <button type="submit" name="updatesystem" class="button button-secondary">Update plugin</button>
                                     </p>
                                 </td>
                             </tr>
