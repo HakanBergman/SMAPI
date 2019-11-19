@@ -12,7 +12,12 @@
             month_24 varchar(4) NOT NULL,
             month_36 varchar(4) NOT NULL,
             month_48 varchar(4) NOT NULL,
-            month_60 varchar(4) NOT NULL
+            month_60 varchar(4) NOT NULL,
+            month_12_insurance varchar(4) NOT NULL,
+            month_24_insurance varchar(4) NOT NULL,
+            month_36_insurance varchar(4) NOT NULL,
+            month_48_insurance varchar(4) NOT NULL,
+            month_60_insurance varchar(4) NOT NULL            
             ) $charset_collate;";	
             require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
             dbDelta( $sql );
