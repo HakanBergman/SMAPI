@@ -51,9 +51,14 @@
 					var month_36 = json_obj.success.month_36;
 					var month_48 = json_obj.success.month_48;
 					var month_60 = json_obj.success.month_60;
+					var month_12_insurance = json_obj.success.month_12_insurance;
+					var month_24_insurance = json_obj.success.month_24_insurance;
+					var month_36_insurance = json_obj.success.month_36_insurance;
+					var month_48_insurance = json_obj.success.month_48_insurance;
+					var month_60_insurance = json_obj.success.month_60_insurance;					
 					/* Update database */
 					var key = $('.smapi_key').val();
-					$.post( "/wp-content/plugins/SMAPI/json/insert_data.php", { key: key, month_12: month_12, month_24: month_24, month_36: month_36, month_48: month_48, month_60: month_60 })
+					$.post( "/wp-content/plugins/SMAPI/json/insert_data.php", { key: key, month_12: month_12, month_24: month_24, month_36: month_36, month_48: month_48, month_60: month_60, month_12_insurance: month_12_insurance, month_24_insurance: month_24_insurance, month_36_insurance: month_36_insurance, month_48_insurance: month_48_insurance, month_60_insurance: month_60_insurance })
 					.done(function( response ) {
 						console.log(response);
 						/* Enable button for clicks */
