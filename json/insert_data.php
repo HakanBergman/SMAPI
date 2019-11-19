@@ -14,6 +14,11 @@
             $wpdb->query($wpdb->prepare("UPDATE $table_name SET month_36 = %s", $_POST['month_36']));
             $wpdb->query($wpdb->prepare("UPDATE $table_name SET month_48 = %s", $_POST['month_48']));
             $wpdb->query($wpdb->prepare("UPDATE $table_name SET month_60 = %s", $_POST['month_60']));
+            $wpdb->query($wpdb->prepare("UPDATE $table_name SET month_12_insurance = %s", $_POST['month_12_insurance']));
+            $wpdb->query($wpdb->prepare("UPDATE $table_name SET month_24_insurance = %s", $_POST['month_24_insurance']));
+            $wpdb->query($wpdb->prepare("UPDATE $table_name SET month_36_insurance = %s", $_POST['month_36_insurance']));
+            $wpdb->query($wpdb->prepare("UPDATE $table_name SET month_48_insurance = %s", $_POST['month_48_insurance']));
+            $wpdb->query($wpdb->prepare("UPDATE $table_name SET month_60_insurance = %s", $_POST['month_60_insurance']));
         } else {
             die('Unauthorized access');
         }

@@ -84,23 +84,23 @@
                                 <h2>SMAPI Financial Values - With insurance</h2>
                                 <p>
                                     <div><label><strong>12 months</strong></label></div>
-                                    <input name="month_12" type="text" id="month_12_insurance" value="<?php echo $smapi_data[0]->month_12_insurance; ?>" class="regular-text" style="padding" disabled>
+                                    <input name="month_12_insurance" type="text" id="month_12_insurance" value="<?php echo $smapi_data[0]->month_12_insurance; ?>" class="regular-text" style="padding" disabled>
                                 </p>
                                 <p>
                                     <div><label><strong>24 months</strong></label></div>
-                                    <input name="month_24" type="text" id="month_24_insurance" value="<?php echo $smapi_data[0]->month_24_insurance; ?>" class="regular-text" disabled>
+                                    <input name="month_24_insurance" type="text" id="month_24_insurance" value="<?php echo $smapi_data[0]->month_24_insurance; ?>" class="regular-text" disabled>
                                 </p>
                                 <p>
                                     <div><label><strong>36 months</strong></label></div>
-                                    <input name="month_36" type="text" id="month_36_insurance" value="<?php echo $smapi_data[0]->month_36_insurance; ?>" class="regular-text" disabled>
+                                    <input name="month_36_insurance" type="text" id="month_36_insurance" value="<?php echo $smapi_data[0]->month_36_insurance; ?>" class="regular-text" disabled>
                                 </p>
                                 <p>
                                     <div><label><strong>48 months</strong></label></div>
-                                    <input name="month_48" type="text" id="month_48_insurance" value="<?php echo $smapi_data[0]->month_48_insurance; ?>" class="regular-text" disabled>
+                                    <input name="month_48_insurance" type="text" id="month_48_insurance" value="<?php echo $smapi_data[0]->month_48_insurance; ?>" class="regular-text" disabled>
                                 </p>
                                 <p>
                                     <div><label><strong>60 months</strong></label></div>
-                                    <input name="month_60" type="text" id="month_60_insurance" value="<?php echo $smapi_data[0]->month_60_insurance; ?>" class="regular-text" disabled>
+                                    <input name="month_60_insurance" type="text" id="month_60_insurance" value="<?php echo $smapi_data[0]->month_60_insurance; ?>" class="regular-text" disabled>
                                 </p>       
                                 <hr />
                                 <h2>SMAPI Financial Values - Without insurance</h2>
