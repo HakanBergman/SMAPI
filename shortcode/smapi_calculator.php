@@ -45,9 +45,11 @@ function smapi_calculator_input() {
                 $content .= '<label for="smapi_amount">Månadskostnad över 60 månader</label>';
                 $content .= '<div><input type="number" name="smapi_month_60" id="smapi_month_60" placeholder="0" disabled/></div>';
             $content .= '</div>';   
+            /*
             $content .= '<div class="form-group">';
                 $content .= '<button type="button" name="smapi_button">Skicka offert</button>';
             $content .= '</div>';                                                      
+            */
         $content .= '</form>';
         return $content;
     }
@@ -84,9 +86,11 @@ function smapi_calculator_input() {
                 $content .= '<label for="smapi_amount">Månadskostnad över 60 månader</label>';
                 $content .= '<div><input type="number" name="smapi_month_60_insurance" id="smapi_month_60_insurance" placeholder="0" disabled/></div>';
             $content .= '</div>';   
+            /*
             $content .= '<div class="form-group">';
                 $content .= '<button type="button" name="smapi_button">Skicka offert</button>';
             $content .= '</div>';                                                      
+            */
         $content .= '</form>';
         return $content;
     }    
