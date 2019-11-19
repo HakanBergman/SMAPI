@@ -72,7 +72,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-smapi.php';
 require_once plugin_dir_path( __FILE__ ) . 'installation/smapi_table.php';
 global $smapi_db_version;
 global $smapi_db_installed;
-$smapi_db_version = '1.0';
+$smapi_db_version = '1.2';
 $smapi_db_installed = get_option( "smapi_db_version");
 register_activation_hook( __FILE__, 'smapi_table');
 
