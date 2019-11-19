@@ -83,7 +83,8 @@
     }    
 
     function smapi_calculator_text() {
-        $content .= "<p>Alla siffror i finansieringsförslaget är ungefärliga och angivna exkl. moms och gäller efter sedvanlig kreditprövning.</p>";        
+        $content = "<p>Alla siffror i finansieringsförslaget är ungefärliga och angivna exkl. moms och gäller efter sedvanlig kreditprövning.</p>";        
+        return $content;
     }
 
 ?>
