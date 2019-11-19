@@ -31,6 +31,11 @@
                     'month_36' => '1.0',
                     'month_48' => '1.0',
                     'month_60' => '1.0',
+                    'month_12_insurance' => '1.0', 
+                    'month_24_insurance' => '1.0',
+                    'month_36_insurance' => '1.0',
+                    'month_48_insurance' => '1.0',
+                    'month_60_insurance' => '1.0',                    
                 ) 
             );	
         }
