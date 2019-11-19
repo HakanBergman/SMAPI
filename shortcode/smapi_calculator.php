@@ -1,13 +1,24 @@
 <?php 
 
+function smapi_calculator_input() {
+    global $wpdb;
+    $table_name = $wpdb->prefix."smapi";
+    $smapi_results = $wpdb->get_results("SELECT * FROM $table_name LIMIT 1");
+    $content =  '<form method="post" action="" id="smapi_calculator">';
+        $content .= '<div class="form-group">';
+            $content .= '<label for="smapi_amount">Hur mycket vill du låna?</label>';
+            $content .= '<input type="number" class="smapi_amount" name="smapi_amount" id="smapi_amount" placeholder="0" />';
+        $content .= '</div>';                                                    
+    $content .= '</form>';
+    return $content;
+}
+
     function smapi_calculator() {
         global $wpdb;
         $table_name = $wpdb->prefix."smapi";
         $smapi_results = $wpdb->get_results("SELECT * FROM $table_name LIMIT 1");
         $content =  '<form method="post" action="" id="smapi_calculator">';
             $content .= '<div class="form-group">';
-                $content .= '<label for="smapi_amount">Hur mycket vill du låna?</label>';
-                $content .= '<input type="number" class="smapi_amount" name="smapi_amount" id="smapi_amount" placeholder="0" />';
                 $content .= '<input type="hidden" name="smapi_interest_month_12" id="smapi_interest_month_12" value="'.$smapi_results[0]->month_12.'" />';
                 $content .= '<input type="hidden" name="smapi_interest_month_24" id="smapi_interest_month_24" value="'.$smapi_results[0]->month_24.'" />';
                 $content .= '<input type="hidden" name="smapi_interest_month_36" id="smapi_interest_month_36" value="'.$smapi_results[0]->month_36.'" />';
@@ -47,8 +58,6 @@
         $smapi_results = $wpdb->get_results("SELECT * FROM $table_name LIMIT 1");
         $content =  '<form method="post" action="" id="smapi_calculator">';
             $content .= '<div class="form-group">';
-                $content .= '<label for="smapi_amount">Hur mycket vill du låna?</label>';
-                $content .= '<input type="number" class="smapi_amount" name="smapi_amount_insurance" id="smapi_amount_insurance" placeholder="0" />';
                 $content .= '<input type="hidden" name="smapi_interest_month_12" id="smapi_interest_month_12" value="'.$smapi_results[0]->month_12_insurance.'" />';
                 $content .= '<input type="hidden" name="smapi_interest_month_24" id="smapi_interest_month_24" value="'.$smapi_results[0]->month_24_insurance.'" />';
                 $content .= '<input type="hidden" name="smapi_interest_month_36" id="smapi_interest_month_36" value="'.$smapi_results[0]->month_36_insurance.'" />';

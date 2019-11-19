@@ -97,6 +97,7 @@ require_once plugin_dir_path( __FILE__ ) . 'shortcode/smapi_calculator.php';
 add_shortcode('smapi-calculator', 'smapi_calculator');
 add_shortcode('smapi-calculator-insurance', 'smapi_calculator_insurance');
 add_shortcode('smapi-calculator-text', 'smapi_calculator_text');
+add_shortcode('smapi-calculator-input', 'smapi_calculator_input');
 
 /**
  * Begins execution of the plugin.
