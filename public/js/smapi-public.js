@@ -33,18 +33,28 @@
 	$( document ).ready(function() {
 
 		/* Do this when user enters an amount on the financial front page */
-		$('#smapi_amount').keyup(function() {
+		$('.smapi_amount').keyup(function() {
 			var money = $(this).val();
 			var month_12 = Math.round(money*(jQuery('#smapi_interest_month_12').val()/100));
 			var month_24 = Math.round(money*(jQuery('#smapi_interest_month_24').val()/100));
 			var month_36 = Math.round(money*(jQuery('#smapi_interest_month_36').val()/100));
 			var month_48 = Math.round(money*(jQuery('#smapi_interest_month_48').val()/100));
 			var month_60 = Math.round(money*(jQuery('#smapi_interest_month_60').val()/100));
+			var month_12_insurance = Math.round(money*(jQuery('#smapi_interest_month_12_insurance').val()/100));
+			var month_24_insurance = Math.round(money*(jQuery('#smapi_interest_month_24_insurance').val()/100));
+			var month_36_insurance = Math.round(money*(jQuery('#smapi_interest_month_36_insurance').val()/100));
+			var month_48_insurance = Math.round(money*(jQuery('#smapi_interest_month_48_insurance').val()/100));
+			var month_60_insurance = Math.round(money*(jQuery('#smapi_interest_month_60_insurance').val()/100));			
 			$('#smapi_month_12').val(month_12);
 			$('#smapi_month_24').val(month_24);
 			$('#smapi_month_36').val(month_36);
 			$('#smapi_month_48').val(month_48);
 			$('#smapi_month_60').val(month_60);
+			$('#smapi_month_12_insurance').val(month_12_insurance);
+			$('#smapi_month_24_insurance').val(month_24_insurance);
+			$('#smapi_month_36_insurance').val(month_36_insurance);
+			$('#smapi_month_48_insurance').val(month_48_insurance);
+			$('#smapi_month_60_insurance').val(month_60_insurance);			
 		});
 
 	});
